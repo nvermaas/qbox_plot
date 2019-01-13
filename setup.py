@@ -8,9 +8,10 @@ setup(name='qbox_plot',
       author_email='nvermaas@astron.nl',
       license='BSD',
       install_requires=['plotly'],
+      packages=find_packages(),
       entry_points={
             'console_scripts': [
-                  'qbox_plot=qbox_plot:main',
+                  'qbox_plot=qbox_plot.qbox_plot:main',
             ],
       },
       scripts=['scripts/qbx_dump_and_copy.sh']
