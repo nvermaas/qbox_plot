@@ -18,8 +18,66 @@ import plotly.figure_factory as FF
 
 
 TIME_FORMAT = "%Y-%m-%d %H:%M"
+def do_plots(title, xx,yy, type, output_html,y_axis_title='verbruik'):
+    """
 
-def do_plot(title, x,y, type, output_html):
+    :param title: Title of Plot
+    :param x: dict with data for x-axis (time)
+    :param y: dict with data for y_axix (usage)
+    :return:
+    """
+    print('do_plots()')
+
+    bar_totals = go.Bar(
+        x=xx[0],
+        y=yy[0],
+        marker=dict(
+            color='rgb(255,221,0)',
+        ),
+    )
+
+    layout = go.Layout(
+        title = title,
+        xaxis=dict(
+            tickangle=-45,
+            #tickvals=x
+        ),
+        yaxis=dict(
+            title=y_axis_title,
+            titlefont=dict(
+                family='Courier New, monospace',
+                size=18,
+                color='#7f7f7f'),
+        ),
+
+        barmode='group',
+        plot_bgcolor='rgb(230,230,230)'
+    )
+
+    line_consumption = go.Scatter(
+        x=xx[0],
+        y=yy[0],
+        mode='lines'
+    )
+    line_redelivery = go.Scatter(
+        x=xx[1],
+        y=yy[1],
+        mode='lines'
+    )
+
+    layout = go.Layout(
+        title=title,
+        xaxis=dict(tickangle=-45),
+        plot_bgcolor='rgb(230,230,230)'
+    )
+
+    data = [bar_totals,line_consumption,line_redelivery]
+
+    fig = go.Figure(data=data, layout=layout)
+    plotly.offline.plot(fig,filename=output_html)
+
+
+def do_plot(title, x,y, type, output_html,y_axis_title='verbruik'):
     """
 
     :param title: Title of Plot
@@ -33,23 +91,38 @@ def do_plot(title, x,y, type, output_html):
         trace = go.Bar(
             x=x,
             y=y,
-            textposition='auto',
             marker=dict(
                 color='rgb(0,129,201)',
-
             ),
-
         )
         layout = go.Layout(
             title = title,
-            xaxis=dict(tickangle=-45),
+            xaxis=dict(
+                tickangle=-45,
+                tickvals=x
+            ),
+            yaxis=dict(
+                title=y_axis_title,
+                titlefont=dict(
+                    family='Courier New, monospace',
+                    size=18,
+                    color='#7f7f7f'),
+            ),
+
             barmode='group',
             plot_bgcolor='rgb(230,230,230)'
         )
 
     elif type == 'scatter':
-        trace = go.Scatter(x=x, y=y, mode='lines')
-        layout = go.Layout(title=title, plot_bgcolor='rgb(230,230,230')
+        trace = go.Scatter(
+            x=x,
+            y=y,
+            mode='lines')
+        layout = go.Layout(
+            title=title,
+            xaxis=dict(tickangle=-45),
+            plot_bgcolor='rgb(230,230,230)'
+        )
 
     data = [trace]
 
@@ -80,10 +153,26 @@ def do_plot_basic(title, x,y):
     }, auto_open=True)
 
 
-def combine(x,y, interval):
-    print('combine data with interval '+interval)
-    combined_x = []
-    combined_y = []
+def sum_datasets(xx, yy, negate=False):
+    """
+    Sum the datasets in the dictionary d
+    :param dd:
+    :param negate: make the resulting dataset negative
+    :return:
+    """
+
+    result = yy[0]
+    if negate:
+        result = []
+        for value in yy[0]:
+            value = -int(value)
+            result.append(value)
+    return xx[0],result
+
+def condense(x,y, interval):
+    print('condense data with interval '+interval)
+    condensed_x = []
+    condensed_y = []
 
     # initialize 
     #prev_timestamp = datetime.datetime.strptime(x[0], TIME_FORMAT)
@@ -100,6 +189,14 @@ def combine(x,y, interval):
         if interval=='today':
            # check if the timestamp is still on the same day as the prev_timestamp
            if timestamp.day == prev_timestamp.day:
+                next = True
+
+        if interval == 'minute':
+            if timestamp.minute != prev_timestamp.minute:
+                next = True
+
+        if interval == 'hour':
+            if timestamp.hour != prev_timestamp.hour:
                 next = True
 
         if interval == 'day':
@@ -123,18 +220,21 @@ def combine(x,y, interval):
            if interval == 'day':
                x_label = datetime.datetime.strftime(prev_timestamp, "%d %b")
 
-           combined_x.append(x_label)
+           if interval == 'hour':
+               x_label = datetime.datetime.strftime(prev_timestamp, "%d %b %H %p")
 
-           # add the combined usage (gas or electricity) to the y-axis
+           condensed_x.append(x_label)
+
+           # add the condensed usage (gas or electricity) to the y-axis
            usage = value - prev_value
-           combined_y.append(usage)
+           condensed_y.append(usage)
            print(str(timestamp) + ' ' + str(usage))
 
            prev_timestamp = timestamp
            prev_value = value
            next = False
 
-    return combined_x, combined_y
+    return condensed_x, condensed_y
 
 def parse_txt_file(filename, starttime, endtime):
     """
@@ -211,14 +311,23 @@ def main():
 
     # general parameters
     parser.add_argument("--filename",
-                        default="2421.txt",
+                        default=None,
                         help="txt file to parse")
+    parser.add_argument("--filenames",
+                        default=None,
+                        help="txt files to parse")
+    parser.add_argument("--consumption_files",
+                        default=None,
+                        help="high and low peak electricity consumption files (181, 182)")
+    parser.add_argument("--redelivery_files",
+                        default=None,
+                        help="high and low peak electricity redelivery files (281, 282)")
     # general parameters
     parser.add_argument("--output_html",
                         default="qbx_plot.html",
                         help="output html file")
 
-    # Specification or Scheduler parameters (required)
+
     parser.add_argument("--starttime",
                         default=None,
                         help="Format like 2019-01-12 00:00")
@@ -232,6 +341,10 @@ def main():
     parser.add_argument("--title",
                         default="Title",
                         help="Title of the Plot")
+    parser.add_argument("--y_axis_title",
+                        default="Verbruik",
+                        help="Title on the Y axis")
+
     parser.add_argument("--type",
                         default="bar",
                         help="Chart type. Possible options: bar, scatter")
@@ -262,12 +375,60 @@ def main():
     # get the data from a text file. The textfile must be in the format that QboxNext.DumpQbx delivers it.
     starttime = datetime.datetime.strptime(args.starttime, TIME_FORMAT)
     endtime = datetime.datetime.strptime(args.endtime, TIME_FORMAT)
-    x,y = parse_txt_file(args.filename, starttime, endtime)
 
-    # combine and stack the data based on the given interval (hour, day, week, month, year)
-    x,y = combine(x,y,args.interval)
+    # for a single file
+    if args.filename!=None:
+        x,y = parse_txt_file(args.filename, starttime, endtime)
 
-    do_plot(args.title,x,y, args.type, args.output_html)
+        # condense and stack the data based on the given interval (hour, day, week, month, year)
+        x,y = condense(x,y,args.interval)
+
+        do_plot(args.title,x,y, args.type, args.output_html, args.y_axis_title)
+
+    # multiple files
+    # assume: consumption1, consumption2, redelivery1,redelivery2
+    xxx = []
+    yyy = []
+
+    if args.consumption_files!=None:
+        xx = []
+        yy = []
+        filenames = args.consumption_files.split(',')
+        for filename in filenames:
+            x, y = parse_txt_file(filename, starttime, endtime)
+            x, y = condense(x, y, args.interval)
+
+            xx.append(x)
+            yy.append(y)
+            #datasets.append(dataset)
+
+        x_summed, y_summed = sum_datasets(xx,yy)
+
+        xxx.append(x_summed)
+        yyy.append(y_summed)
+
+    if args.redelivery_files != None:
+        xx = []
+        yy = []
+        filenames = args.redelivery_files.split(',')
+
+        for filename in filenames:
+            x, y = parse_txt_file(filename, starttime, endtime)
+            x, y = condense(x, y, args.interval)
+
+            xx.append(x)
+            yy.append(y)
+            # datasets.append(dataset)
+
+        x_summed, y_summed = sum_datasets(xx, yy, negate=True)
+
+        xxx.append(x_summed)
+        yyy.append(y_summed)
+
+    if args.consumption_files!=None:
+        do_plots(args.title, xxx, yyy, args.type, args.output_html, args.y_axis_title)
+
+
 
 if __name__ == "__main__":
     main()

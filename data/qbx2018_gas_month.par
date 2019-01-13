@@ -4,3 +4,4 @@
 --starttime=2018-01-01 00:00
 --endtime=2019-01-01 01:00
 --interval=month
+--y_axis_title=verbruik in m3

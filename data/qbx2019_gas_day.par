@@ -1,5 +1,5 @@
 --filename=data\2421.txt
---output_html=qbx2018_gas.html
+--output_html=qbx2019_gas.html
 --title=Gasverbruik 2019
 --starttime=2019-01-01 00:00
 --endtime=2019-12-31 00:00

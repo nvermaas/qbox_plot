@@ -1,0 +1,8 @@
+--consumption_files=data\qbx2018_181.txt,data\qbx2018_182.txt
+--redelivery_files=data\qbx2018_182.txt,data\qbx2018_282.txt
+--output_html=qbx2018_stroom.html
+--title=Stroom 2018 - per dag
+--starttime=2018-01-01 00:00
+--endtime=2019-01-01 01:00
+--interval=day
+--y_axis_title=verbruik in kWh
