@@ -1,0 +1,6 @@
+--filename=data\qbx2018_2421.txt
+--output_html=qbx2018_gas.html
+--title=Gasverbruik 2018 per dag
+--starttime=2018-01-01 00:00
+--endtime=2018-12-31 00:00
+--interval=day
