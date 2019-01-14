@@ -11,7 +11,7 @@ Als dat niet het geval is dan kun je hier wat instructies vinden:
 
 ## Installatie
 
-   pip install http://uilennest.net/repository/qbox_plot-1.0.0.tar.gz --upgrade
+   ``pip install http://uilennest.net/repository/qbox_plot-1.0.0.tar.gz --upgrade``
 
 ## Gebruik
 Zorg dat de qbox text bestanden lokaal beschikbaar zijn. In de voorbeelden staan ze in een ``data`` directory.
@@ -27,7 +27,11 @@ qbox_plot kan gestart worden met parameters op de commandline, maar het kan ook 
 
 ## Voorbeelden
 
-### Enkele grafiek: 2018_gas_per_maand.par
+### Enkele grafiek
+ 
+parameter file: `2018_gas_per_maand.par`
+ 
+```
 --filename=data\qbx2018_2421.txt
 --output_html=qbx2018_gas.html
 --title=Gasverbruik 2018 per maand
@@ -36,14 +40,17 @@ qbox_plot kan gestart worden met parameters op de commandline, maar het kan ook 
 --interval=month
 --y_axis_title=verbruik in m
 --type=bar
-
+```
   `qbox_plot --parfile 2018_gas_per_maand.par`
   
 <p align="center">
   <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/gas_plot.png"/>
 </p>
 
-### Gecombineerde electriciteit - 2018_dec_stroom_per_dag.par
+### Gecombineerde electriciteit
+
+parameter file: `2018_dec_stroom_per_dag.par`
+```
 --consumption_files=data\qbx2018_181.txt,data\qbx2018_182.txt
 --redelivery_files=data\qbx2018_182.txt,data\qbx2018_282.txt
 --output_html=qbx2018_stroom.html
@@ -52,6 +59,7 @@ qbox_plot kan gestart worden met parameters op de commandline, maar het kan ook 
 --endtime=2019-01-07 01:00
 --interval=day
 --y_axis_title=verbruik in kWh
+```
 
   `qbox_plot --parfile 2018_dec_stroom_per_dag.par`
 
