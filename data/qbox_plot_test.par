@@ -1,7 +1,7 @@
---consumption_files=data\qbx2018_181.txt,data\qbx2018_182.txt
---redelivery_files=data\qbx2018_182.txt,data\qbx2018_282.txt
---output_html=qbx2018_stroom.html
---title=Stroom December 2018 - per dag
+--consumption_files=data\181.txt,data\182.txt
+--redelivery_files=data\182.txt,data\282.txt
+--output_html=qbx_stroom_dec2018.html
+--title=Test Data : Stroom per dag - December 2018
 --starttime=2018-12-01 00:00
 --endtime=2019-01-07 01:00
 --interval=day
