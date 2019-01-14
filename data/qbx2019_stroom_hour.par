@@ -1,0 +1,8 @@
+--consumption_files=data\181.txt,data\182.txt
+--redelivery_files=data\281.txt,data\282.txt
+--output_html=qbx2019_stroom.html
+--title=Stroom per dag - Januari 2019
+--starttime=2019-01-14 00:00
+--endtime=2019-01-15 01:00
+--interval=hour
+--y_axis_title=verbruik in kWh

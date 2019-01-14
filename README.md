@@ -27,6 +27,14 @@ qbox_plot kan gestart worden met parameters op de commandline, maar het kan ook 
 
 ## Voorbeelden
 
+### Nachtverbruik (kanaal 181) op 11 jan 2019
+  `qbox_plot --filename data\181.txt --interval hour --starttime "2019-01-11 00:00" --endtime "2019-01-12 00:00" --output_html=stroom181.html --title "nachtstroom 12 jan 2019"`
+`
+
+### Dagverbruik (kanaal 182) op 11 jan 2019
+  `qbox_plot --filename data\182.txt --interval hour --starttime "2019-01-11 00:00" --endtime "2019-01-12 00:00" --output_html=stroom182.html --title "dagstroom 12 jan 2019"`
+
+
 ### Enkele grafiek
  
 parameter file: `2018_gas_per_maand.par`

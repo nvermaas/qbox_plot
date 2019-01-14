@@ -1,7 +1,0 @@
---filenames=data\qbx2018_181.txt,data\qbx2018_182.txt,data\qbx2018_181.txt,data\qbx2018_281.txt
---output_html=qbx2018_stroom.html
---title=Stroom 2018 - per maand
---starttime=2018-01-01 00:00
---endtime=2019-01-01 01:00
---interval=month
---y_axis_title=verbruik in kWh
