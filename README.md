@@ -25,6 +25,10 @@ qbox_plot kan gestart worden met parameters op de commandline, maar het kan ook 
 
   `qbox_plot --parfile <my_parfile>`
 
+Voor 'help' over welke parameters er beschikbaar zijn:
+
+  `qbox_plot --h`
+
 ## Voorbeelden
 
 ### Nachtverbruik (kanaal 181) op 11 jan 2019
@@ -72,8 +76,17 @@ parameter file: `2018_dec_stroom_per_dag.par`
 
   `qbox_plot --parfile 2018_dec_stroom_per_dag.par`
 
+### Geavanceerd gebruik.
+Het is mogelijk om qbox_plot zijn data files van een andere computer te kopieren. 
+En het is mogelijk om zowel voor als na die kopieerslag een extern commando uit te voeren.
 
+Dit maakt het mogelijk om qbox_plot op een webserver te draaien, 
+waarbij hij eerst de QServer op de Raspberry Pi opdracht geeft om zijn data te exporteren naar de gewenste txt bestanden 
+alvorens ze te downloaden en te visualiseren.
+
+Schematisch ziet dat er zo uit:
 
 <p align="center">
-  <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/electra_plot.png"/>
+  <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/qbox_plot_as_frontend.jpg"/>
 </p>
+

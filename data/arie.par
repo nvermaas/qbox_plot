@@ -1,0 +1,8 @@
+--filename=data\181.txt
+--output_html=gas2421.html
+--title=Gasverbruik 2019
+--starttime=2019-01-15 00:00
+--endtime=2019-01-15 20:00
+--interval=hour
+--y_axis_title=verbruik in ltr
+--type=bar
