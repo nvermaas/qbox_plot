@@ -142,6 +142,15 @@ def scp_filename(host, source, target):
     os.system(cmd)
 
 
+def execute_remote_command(host, cmd):
+    """ Run command on an ARTS node. Assumes ssh keys have been set up
+        cmd: command to run
+    """
+    ssh_cmd = "ssh {} \"{}\"".format(host, cmd)
+    print("Executing '{}'".format(ssh_cmd))
+    return os.system(ssh_cmd)
+
+
 def sum_datasets(xx, yy, negate=False):
     """
     Sum all the x and y values of the 2 datasets in the dictionary d
@@ -184,6 +193,27 @@ def sum_datasets(xx, yy, negate=False):
         pass
 
     return x_summed,y_summed
+
+
+def handle_next(interval, value, prev_value, timestamp, prev_timestamp, condensed_x, condensed_y):
+    # determine sensible presentation value for x-axis
+    x_label = prev_timestamp
+
+    if interval == 'day':
+        x_label = datetime.datetime.strftime(prev_timestamp, "%d %b")
+
+    if interval == 'hour':
+        x_label = datetime.datetime.strftime(prev_timestamp, "%d %b %H %p")
+
+    if interval == 'month':
+        x_label = datetime.datetime.strftime(prev_timestamp, "%b")
+
+    condensed_x.append(x_label)
+
+    # add the condensed usage (gas or electricity) to the y-axis
+    usage = value - prev_value
+    condensed_y.append(usage)
+    print(str(timestamp) + ' ' + str(usage))
 
 
 def condense(x,y, interval):
@@ -230,25 +260,15 @@ def condense(x,y, interval):
 
         # next limit found
         if (next):
-           # determine sensible presentation value for x-axis
-           x_label = prev_timestamp
+            handle_next(interval, value, prev_value, timestamp, prev_timestamp, condensed_x, condensed_y)
 
-           if interval == 'day':
-               x_label = datetime.datetime.strftime(prev_timestamp, "%d %b")
+            # prepare the variables for the next round
+            prev_timestamp = timestamp
+            prev_value = value
+            next = False
 
-           if interval == 'hour':
-               x_label = datetime.datetime.strftime(prev_timestamp, "%d %b %H %p")
-
-           condensed_x.append(x_label)
-
-           # add the condensed usage (gas or electricity) to the y-axis
-           usage = value - prev_value
-           condensed_y.append(usage)
-           print(str(timestamp) + ' ' + str(usage))
-
-           prev_timestamp = timestamp
-           prev_value = value
-           next = False
+    # finally add the last value
+    handle_next(interval, value, prev_value, timestamp, prev_timestamp, condensed_x, condensed_y)
 
     return condensed_x, condensed_y
 
@@ -345,6 +365,12 @@ def main():
     parser.add_argument("--remote_dir",
                         default=None,
                         help="remote directory where the files are stored")
+    parser.add_argument("--remote_pre_command",
+                        default=None,
+                        help="execute this command on the remote host before downloading the data files")
+    parser.add_argument("--remote_post_command",
+                        default=None,
+                        help="execute this command on the remote host after generating the html results.")
     parser.add_argument("--local_dir",
                         default='',
                         help="local directory where the data files are stored or read")
@@ -409,6 +435,8 @@ def main():
     consumption_files = args.consumption_files
     redelivery_files = args.redelivery_files
 
+    if args.remote_pre_command != None:
+        execute_remote_command(args.remote_host, args.remote_pre_command)
 
     # for a single file
     if filename!=None:
@@ -487,6 +515,8 @@ def main():
         legends = args.legends.split(",")
         do_electricity_plots(args.title, xxx, yyy, legends, args.type, args.output_html, args.y_axis_title)
 
+    if args.remote_post_command != None:
+        execute_remote_command(args.remote_host, args.remote_post_command)
 
 
 if __name__ == "__main__":
