@@ -76,6 +76,10 @@ parameter file: `2018_dec_stroom_per_dag.par`
 
   `qbox_plot --parfile 2018_dec_stroom_per_dag.par`
 
+<p align="center">
+  <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/stroom_plot.png"/>
+</p>
+
 ## Geavanceerd gebruik.
 Het is mogelijk om qbox_plot zijn data files van een andere computer te laten lezen, 
 bij voorkeur van de Raspberry Pi waar ze gecreeerd worden. 
@@ -104,7 +108,7 @@ cd /var/qboxnextdata/Qbox_15-49-002-081
 ./dumpqbx --qbx=/var/qboxnextdata/Qbox_15-49-002-081/15-49-002-081_00000282.qbx --values > 282.txt
 ```
 
-`stroom.par` (parameter file)
+'stroom.par' (parameter file)
 ```
 --filename=181.txt
 --consumption_files=181.txt,182.txt
@@ -114,10 +118,33 @@ cd /var/qboxnextdata/Qbox_15-49-002-081
 --remote_pre_command=/var/qboxnextdata/Qbox_15-49-002-081/dump_stroom.sh
 --local_dir=data
 --legends=verbruik,teruglevering,netto
---output_html=stroom.html
+--output_html=/www/stroom.html
 --title=Stroom per uur - Januari 2019
 --starttime=2019-01-16 00:00
 --endtime=2019-01-17 01:00
 --interval=hour
 --y_axis_title=verbruik in Wh
 ```
+
+'reload_qbx.sh'
+Dit script start de `qbox_plot' applicatie elke 600 seconden (10 minuten). 
+Dit voorbeeld laat zien dat er meerdere presentaties tegelijk kunnen worden gemaakt.
+
+```
+source ./env/bin/activate
+while [ 1 ]
+do
+  qbox_plot --parfile stroom.par
+  qbox_plot --parfile gas.par
+  
+  echo sleep for 10 minutes
+  sleep 600
+done
+```
+
+De '--output_html=www/stroom.html' zorgt ervoor dat de html pagina op een plek terecht komt die door een webserver kan worden getoont.
+Het resultaat is deze web pagina die om de 10 minuten kan worden ververst. (de pagina ververst niet automatisch, maar met F5 wordt hij opnieuw geladen met nieuwe gegevens)
+
+<p align="center">
+  <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/www_gas_plot.jpg"/>
+</p>
