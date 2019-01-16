@@ -126,7 +126,8 @@ cd /var/qboxnextdata/Qbox_15-49-002-081
 --y_axis_title=verbruik in Wh
 ```
 
-'reload_qbx.sh'
+'reload_qbx.sh':
+
 Dit script start de `qbox_plot' applicatie elke 600 seconden (10 minuten). 
 Dit voorbeeld laat zien dat er meerdere presentaties tegelijk kunnen worden gemaakt.
 
