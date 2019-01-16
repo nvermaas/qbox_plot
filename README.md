@@ -76,17 +76,48 @@ parameter file: `2018_dec_stroom_per_dag.par`
 
   `qbox_plot --parfile 2018_dec_stroom_per_dag.par`
 
-### Geavanceerd gebruik.
-Het is mogelijk om qbox_plot zijn data files van een andere computer te kopieren. 
-En het is mogelijk om zowel voor als na die kopieerslag een extern commando uit te voeren.
+## Geavanceerd gebruik.
+Het is mogelijk om qbox_plot zijn data files van een andere computer te laten lezen, 
+bij voorkeur van de Raspberry Pi waar ze gecreeerd worden. 
+En het is mogelijk om zowel voor als na de dataverwerking een extern commando uit te voeren, 
+bijvoorbeeld een scp commando om die data files te kopieren.
 
 Dit maakt het mogelijk om 'qbox_plot' op een webserver te draaien, 
-waarbij hij eerst de 'QServer' op de Raspberry Pi opdracht geeft om zijn data te exporteren naar de gewenste txt bestanden 
+waarbij hij eerst de QboxNext software de Raspberry Pi opdracht geeft om de data te exporteren naar de gewenste txt bestanden 
 alvorens ze te downloaden en te visualiseren.
 
-Schematisch ziet dat er zo uit:
+Dit gaat het vanuit dat de Qserver en DumpQbx applicaties al zijn geinstalleerd op de Raspberry Pi.
 
 <p align="center">
   <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/qbox_plot_as_frontend.jpg"/>
 </p>
 
+'dump_stroom.sh' is een shell script dat de DumpQbx applicatie start voor elk 'kanaal' zodat de txt bestanden worden gegenereerd.
+Dit script kan met de hand worden uitgevoerd, maar ook automatisch door 'qbox_plot' met het commando dat met de '--remote_pre_command' wordt meegegeven. (zie de parameter file)
+
+'dump_stroom.sh':
+```
+cd /var/qboxnextdata/Qbox_15-49-002-081 
+./dumpqbx --qbx=/var/qboxnextdata/Qbox_15-49-002-081/15-49-002-081_00000181.qbx --values > 181.txt
+./dumpqbx --qbx=/var/qboxnextdata/Qbox_15-49-002-081/15-49-002-081_00000182.qbx --values > 182.txt
+./dumpqbx --qbx=/var/qboxnextdata/Qbox_15-49-002-081/15-49-002-081_00000281.qbx --values > 281.txt
+./dumpqbx --qbx=/var/qboxnextdata/Qbox_15-49-002-081/15-49-002-081_00000282.qbx --values > 282.txt
+```
+
+`stroom.par` (parameter file)
+```
+--filename=181.txt
+--consumption_files=181.txt,182.txt
+--redelivery_files=281.txt,282.txt
+--remote_host=pi@192.168.?.?
+--remote_dir=/var/qboxnextdata/Qbox_15-49-002-081
+--remote_pre_command=/var/qboxnextdata/Qbox_15-49-002-081/dump_stroom.sh
+--local_dir=data
+--legends=verbruik,teruglevering,netto
+--output_html=stroom.html
+--title=Stroom per uur - Januari 2019
+--starttime=2019-01-16 00:00
+--endtime=2019-01-17 01:00
+--interval=hour
+--y_axis_title=verbruik in Wh
+```
