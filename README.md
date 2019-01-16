@@ -40,7 +40,8 @@ qbox_plot kan gestart worden met parameters op de commandline, maar het kan ook 
 parameter file: `2018_gas_per_maand.par`
  
 ```
---filename=data\qbx2018_2421.txt
+--filename=qbx2018_2421.txt
+--local_dir=data
 --output_html=qbx2018_gas.html
 --title=Gasverbruik 2018 per maand
 --starttime=2018-01-01 00:00
@@ -59,8 +60,9 @@ parameter file: `2018_gas_per_maand.par`
 
 parameter file: `2018_dec_stroom_per_dag.par`
 ```
---consumption_files=data\qbx2018_181.txt,data\qbx2018_182.txt
---redelivery_files=data\qbx2018_182.txt,data\qbx2018_282.txt
+--consumption_files=qbx2018_181.txt,qbx2018_182.txt
+--redelivery_files=qbx2018_182.txt,qbx2018_282.txt
+--local_dir=data
 --output_html=qbx2018_stroom.html
 --title=Stroom December 2018 - per dag
 --starttime=2018-12-01 00:00
@@ -70,6 +72,7 @@ parameter file: `2018_dec_stroom_per_dag.par`
 ```
 
   `qbox_plot --parfile 2018_dec_stroom_per_dag.par`
+
 
 
 <p align="center">

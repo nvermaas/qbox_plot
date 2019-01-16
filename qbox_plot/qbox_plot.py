@@ -1,5 +1,6 @@
 """
     File name: qbx_plot.py
+    version: 1.0.0 (16 jan 2019)
     Author: Nico Vermaas (nvermaas@xs4all.nl)
     Date created: 2019-01-13
     Description: Plot converted QboxNext datafiles.
@@ -12,13 +13,11 @@ import datetime
 import plotly
 
 import argparse
-import plotly.plotly as py
 import plotly.graph_objs as go
-import plotly.figure_factory as FF
 
 
 TIME_FORMAT = "%Y-%m-%d %H:%M"
-def do_plots(title, xx,yy, type, output_html,y_axis_title='verbruik'):
+def do_electricity_plots(title, xxx,yyy, legends, type, output_html,y_axis_title='verbruik'):
     """
 
     :param title: Title of Plot
@@ -29,46 +28,40 @@ def do_plots(title, xx,yy, type, output_html,y_axis_title='verbruik'):
     print('do_plots()')
 
     bar_totals = go.Bar(
-        x=xx[2],
-        y=yy[2],
+        x=xxx[2],
+        y=yyy[2],
         marker=dict(
             color='rgb(255,221,0)',
         ),
-    )
-
-    layout = go.Layout(
-        title = title,
-        xaxis=dict(
-            tickangle=-45,
-            #tickvals=x
-        ),
-        yaxis=dict(
-            title=y_axis_title,
-            titlefont=dict(
-                family='Courier New, monospace',
-                size=18,
-                color='#7f7f7f'),
-        ),
-
-        barmode='group',
-        plot_bgcolor='rgb(230,230,230)'
+        name=legends[2]
     )
 
     line_consumption = go.Scatter(
-        x=xx[0],
-        y=yy[0],
-        mode='lines'
+        x=xxx[0],
+        y=yyy[0],
+        mode='lines',
+        name=legends[0]
     )
     line_redelivery = go.Scatter(
-        x=xx[1],
-        y=yy[1],
-        mode='lines'
+        x=xxx[1],
+        y=yyy[1],
+        mode='lines',
+        name = legends[1]
     )
 
     layout = go.Layout(
         title=title,
         xaxis=dict(tickangle=-45),
-        plot_bgcolor='rgb(230,230,230)'
+        plot_bgcolor='rgb(230,230,230)',
+        yaxis = dict(
+            title=y_axis_title,
+            titlefont=dict(
+            family='Courier New, monospace',
+            size=18,
+            color='#7f7f7f'),
+        ),
+        barmode = 'group',
+
     )
 
     data = [bar_totals,line_consumption,line_redelivery]
@@ -132,9 +125,22 @@ def do_plot(title, x,y, type, output_html,y_axis_title='verbruik'):
     plotly.offline.plot(fig,filename=output_html)
     # plotly.offline.plot({"data": data, "layout": layout}, auto_open=True)
 
+
 def find_last_in_list(list, value):
     pos = max(loc for loc, val in enumerate(list) if val == value)
     return pos
+
+
+def scp_filename(host, source, target):
+    """ scp a file from a remote location to a local dir
+        location: directory on the node where the source file is, and where the target file will be copied.
+        from_name: file to copy
+        to_name : the new file.
+    """
+    print('scp '+host+':/' + source+ ' to ' + target)
+    cmd = 'scp ' + host + ':' + source + ' ' + target
+    os.system(cmd)
+
 
 def sum_datasets(xx, yy, negate=False):
     """
@@ -179,13 +185,13 @@ def sum_datasets(xx, yy, negate=False):
 
     return x_summed,y_summed
 
+
 def condense(x,y, interval):
     print('condense data with interval '+interval)
     condensed_x = []
     condensed_y = []
 
     # initialize 
-    #prev_timestamp = datetime.datetime.strptime(x[0], TIME_FORMAT)
     prev_timestamp = x[0]
     prev_value = y[0]
     next = False
@@ -333,6 +339,18 @@ def main():
     parser.add_argument("--redelivery_files",
                         default=None,
                         help="high and low peak electricity redelivery files (281, 282)")
+    parser.add_argument("--remote_host",
+                        default=None,
+                        help="remote ssh/scp host where the files are stored (if None, then they are assumed to be local)")
+    parser.add_argument("--remote_dir",
+                        default=None,
+                        help="remote directory where the files are stored")
+    parser.add_argument("--local_dir",
+                        default='',
+                        help="local directory where the data files are stored or read")
+    parser.add_argument("--legends",
+                        default="verbruik,teruglevering,totaal",
+                        help="Legends for consumption, redelivery and totals.")
     # general parameters
     parser.add_argument("--output_html",
                         default="qbx_plot.html",
@@ -377,19 +395,31 @@ def main():
 
     # --------------------------------------------------------------------------------------------------------
     if (args.version):
-        print('--- qbx_plot.py - version 1.0 - 12 jan 2019 ---')
+        print('--- qbx_plot.py - version 1.0.0 - 16 jan 2019 ---')
         return
 
-    print('--- qbx_plot.py - version 1.0 - 12 jan 2019 ---')
+    print('--- qbx_plot.py - version 1.0.0 - 16 jan 2019 ---')
 
 
     # get the data from a text file. The textfile must be in the format that QboxNext.DumpQbx delivers it.
     starttime = datetime.datetime.strptime(args.starttime, TIME_FORMAT)
     endtime = datetime.datetime.strptime(args.endtime, TIME_FORMAT)
 
+    filename = args.filename
+    consumption_files = args.consumption_files
+    redelivery_files = args.redelivery_files
+
+
     # for a single file
-    if args.filename!=None:
-        x,y = parse_txt_file(args.filename, starttime, endtime)
+    if filename!=None:
+
+        if args.remote_host != None:
+            # copy the files from a remote location.
+            source = os.path.join(args.remote_dir, filename)
+            target = os.path.join(args.local_dir, filename)
+            scp_filename(args.remote_host, source, target)
+
+        x,y = parse_txt_file(os.path.join(args.local_dir, filename), starttime, endtime)
 
         # condense and stack the data based on the given interval (hour, day, week, month, year)
         x,y = condense(x,y,args.interval)
@@ -401,12 +431,19 @@ def main():
     xxx = []
     yyy = []
 
-    if args.consumption_files!=None:
+    if consumption_files!=None:
         xx = []
         yy = []
         filenames = args.consumption_files.split(',')
         for filename in filenames:
-            x, y = parse_txt_file(filename, starttime, endtime)
+
+            if args.remote_host != None:
+                # copy the files from a remote location.
+                source = os.path.join(args.remote_dir, filename)
+                target = os.path.join(args.local_dir, filename)
+                scp_filename(args.remote_host, source, target)
+
+            x, y = parse_txt_file(os.path.join(args.local_dir, filename), starttime, endtime)
             x, y = condense(x, y, args.interval)
 
             xx.append(x)
@@ -417,13 +454,20 @@ def main():
         xxx.append(x_summed)
         yyy.append(y_summed)
 
-    if args.redelivery_files != None:
+    if redelivery_files != None:
         xx = []
         yy = []
         filenames = args.redelivery_files.split(',')
 
         for filename in filenames:
-            x, y = parse_txt_file(filename, starttime, endtime)
+
+            if args.remote_host != None:
+                # copy the files from a remote location.
+                source = os.path.join(args.remote_dir, filename)
+                target = os.path.join(args.local_dir, filename)
+                scp_filename(args.remote_host, source, target)
+
+            x, y = parse_txt_file(os.path.join(args.local_dir, filename), starttime, endtime)
             x, y = condense(x, y, args.interval)
 
             xx.append(x)
@@ -440,7 +484,8 @@ def main():
         x_total, y_total = sum_datasets(xxx,yyy)
         xxx.append(x_total)
         yyy.append(y_total)
-        do_plots(args.title, xxx, yyy, args.type, args.output_html, args.y_axis_title)
+        legends = args.legends.split(",")
+        do_electricity_plots(args.title, xxx, yyy, legends, args.type, args.output_html, args.y_axis_title)
 
 
 

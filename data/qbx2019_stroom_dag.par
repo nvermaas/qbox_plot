@@ -1,5 +1,6 @@
---consumption_files=data\181.txt,data\182.txt
---redelivery_files=data\182.txt,data\282.txt
+--consumption_files=181.txt,182.txt
+--redelivery_files=281.txt,282.txt
+--local_dir=data
 --output_html=qbx2019_stroom_today.html
 --title=Stroom per dag - Januari 2019
 --starttime=2019-01-01 00:00
