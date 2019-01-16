@@ -146,5 +146,5 @@ De '--output_html=www/stroom.html' zorgt ervoor dat de html pagina op een plek t
 Het resultaat is deze web pagina die om de 10 minuten kan worden ververst. (de pagina ververst niet automatisch, maar met F5 wordt hij opnieuw geladen met nieuwe gegevens)
 
 <p align="center">
-  <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/www_gas_plot.jpg"/>
+  <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/www_stroom_plot.jpg"/>
 </p>
