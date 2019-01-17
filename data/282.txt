@@ -5715,1329 +5715,1329 @@ Timestamp NL     :        raw,        kWh,      money, quality (kWh can be kWh, 
 2019-01-16 14:31 :     549356,  549356000, 11536476000,     0
 2019-01-16 14:32 :     549356,  549356000, 11536476000,     0
 2019-01-16 14:33 :     549356,  549356000, 11536476000,     0
-2019-01-16 14:34 : empty slot
-2019-01-16 14:35 : empty slot
-2019-01-16 14:36 : empty slot
-2019-01-16 14:37 : empty slot
-2019-01-16 14:38 : empty slot
-2019-01-16 14:39 : empty slot
-2019-01-16 14:40 : empty slot
-2019-01-16 14:41 : empty slot
-2019-01-16 14:42 : empty slot
-2019-01-16 14:43 : empty slot
-2019-01-16 14:44 : empty slot
-2019-01-16 14:45 : empty slot
-2019-01-16 14:46 : empty slot
-2019-01-16 14:47 : empty slot
-2019-01-16 14:48 : empty slot
-2019-01-16 14:49 : empty slot
-2019-01-16 14:50 : empty slot
-2019-01-16 14:51 : empty slot
-2019-01-16 14:52 : empty slot
-2019-01-16 14:53 : empty slot
-2019-01-16 14:54 : empty slot
-2019-01-16 14:55 : empty slot
-2019-01-16 14:56 : empty slot
-2019-01-16 14:57 : empty slot
-2019-01-16 14:58 : empty slot
-2019-01-16 14:59 : empty slot
-2019-01-16 15:00 : empty slot
-2019-01-16 15:01 : empty slot
-2019-01-16 15:02 : empty slot
-2019-01-16 15:03 : empty slot
-2019-01-16 15:04 : empty slot
-2019-01-16 15:05 : empty slot
-2019-01-16 15:06 : empty slot
-2019-01-16 15:07 : empty slot
-2019-01-16 15:08 : empty slot
-2019-01-16 15:09 : empty slot
-2019-01-16 15:10 : empty slot
-2019-01-16 15:11 : empty slot
-2019-01-16 15:12 : empty slot
-2019-01-16 15:13 : empty slot
-2019-01-16 15:14 : empty slot
-2019-01-16 15:15 : empty slot
-2019-01-16 15:16 : empty slot
-2019-01-16 15:17 : empty slot
-2019-01-16 15:18 : empty slot
-2019-01-16 15:19 : empty slot
-2019-01-16 15:20 : empty slot
-2019-01-16 15:21 : empty slot
-2019-01-16 15:22 : empty slot
-2019-01-16 15:23 : empty slot
-2019-01-16 15:24 : empty slot
-2019-01-16 15:25 : empty slot
-2019-01-16 15:26 : empty slot
-2019-01-16 15:27 : empty slot
-2019-01-16 15:28 : empty slot
-2019-01-16 15:29 : empty slot
-2019-01-16 15:30 : empty slot
-2019-01-16 15:31 : empty slot
-2019-01-16 15:32 : empty slot
-2019-01-16 15:33 : empty slot
-2019-01-16 15:34 : empty slot
-2019-01-16 15:35 : empty slot
-2019-01-16 15:36 : empty slot
-2019-01-16 15:37 : empty slot
-2019-01-16 15:38 : empty slot
-2019-01-16 15:39 : empty slot
-2019-01-16 15:40 : empty slot
-2019-01-16 15:41 : empty slot
-2019-01-16 15:42 : empty slot
-2019-01-16 15:43 : empty slot
-2019-01-16 15:44 : empty slot
-2019-01-16 15:45 : empty slot
-2019-01-16 15:46 : empty slot
-2019-01-16 15:47 : empty slot
-2019-01-16 15:48 : empty slot
-2019-01-16 15:49 : empty slot
-2019-01-16 15:50 : empty slot
-2019-01-16 15:51 : empty slot
-2019-01-16 15:52 : empty slot
-2019-01-16 15:53 : empty slot
-2019-01-16 15:54 : empty slot
-2019-01-16 15:55 : empty slot
-2019-01-16 15:56 : empty slot
-2019-01-16 15:57 : empty slot
-2019-01-16 15:58 : empty slot
-2019-01-16 15:59 : empty slot
-2019-01-16 16:00 : empty slot
-2019-01-16 16:01 : empty slot
-2019-01-16 16:02 : empty slot
-2019-01-16 16:03 : empty slot
-2019-01-16 16:04 : empty slot
-2019-01-16 16:05 : empty slot
-2019-01-16 16:06 : empty slot
-2019-01-16 16:07 : empty slot
-2019-01-16 16:08 : empty slot
-2019-01-16 16:09 : empty slot
-2019-01-16 16:10 : empty slot
-2019-01-16 16:11 : empty slot
-2019-01-16 16:12 : empty slot
-2019-01-16 16:13 : empty slot
-2019-01-16 16:14 : empty slot
-2019-01-16 16:15 : empty slot
-2019-01-16 16:16 : empty slot
-2019-01-16 16:17 : empty slot
-2019-01-16 16:18 : empty slot
-2019-01-16 16:19 : empty slot
-2019-01-16 16:20 : empty slot
-2019-01-16 16:21 : empty slot
-2019-01-16 16:22 : empty slot
-2019-01-16 16:23 : empty slot
-2019-01-16 16:24 : empty slot
-2019-01-16 16:25 : empty slot
-2019-01-16 16:26 : empty slot
-2019-01-16 16:27 : empty slot
-2019-01-16 16:28 : empty slot
-2019-01-16 16:29 : empty slot
-2019-01-16 16:30 : empty slot
-2019-01-16 16:31 : empty slot
-2019-01-16 16:32 : empty slot
-2019-01-16 16:33 : empty slot
-2019-01-16 16:34 : empty slot
-2019-01-16 16:35 : empty slot
-2019-01-16 16:36 : empty slot
-2019-01-16 16:37 : empty slot
-2019-01-16 16:38 : empty slot
-2019-01-16 16:39 : empty slot
-2019-01-16 16:40 : empty slot
-2019-01-16 16:41 : empty slot
-2019-01-16 16:42 : empty slot
-2019-01-16 16:43 : empty slot
-2019-01-16 16:44 : empty slot
-2019-01-16 16:45 : empty slot
-2019-01-16 16:46 : empty slot
-2019-01-16 16:47 : empty slot
-2019-01-16 16:48 : empty slot
-2019-01-16 16:49 : empty slot
-2019-01-16 16:50 : empty slot
-2019-01-16 16:51 : empty slot
-2019-01-16 16:52 : empty slot
-2019-01-16 16:53 : empty slot
-2019-01-16 16:54 : empty slot
-2019-01-16 16:55 : empty slot
-2019-01-16 16:56 : empty slot
-2019-01-16 16:57 : empty slot
-2019-01-16 16:58 : empty slot
-2019-01-16 16:59 : empty slot
-2019-01-16 17:00 : empty slot
-2019-01-16 17:01 : empty slot
-2019-01-16 17:02 : empty slot
-2019-01-16 17:03 : empty slot
-2019-01-16 17:04 : empty slot
-2019-01-16 17:05 : empty slot
-2019-01-16 17:06 : empty slot
-2019-01-16 17:07 : empty slot
-2019-01-16 17:08 : empty slot
-2019-01-16 17:09 : empty slot
-2019-01-16 17:10 : empty slot
-2019-01-16 17:11 : empty slot
-2019-01-16 17:12 : empty slot
-2019-01-16 17:13 : empty slot
-2019-01-16 17:14 : empty slot
-2019-01-16 17:15 : empty slot
-2019-01-16 17:16 : empty slot
-2019-01-16 17:17 : empty slot
-2019-01-16 17:18 : empty slot
-2019-01-16 17:19 : empty slot
-2019-01-16 17:20 : empty slot
-2019-01-16 17:21 : empty slot
-2019-01-16 17:22 : empty slot
-2019-01-16 17:23 : empty slot
-2019-01-16 17:24 : empty slot
-2019-01-16 17:25 : empty slot
-2019-01-16 17:26 : empty slot
-2019-01-16 17:27 : empty slot
-2019-01-16 17:28 : empty slot
-2019-01-16 17:29 : empty slot
-2019-01-16 17:30 : empty slot
-2019-01-16 17:31 : empty slot
-2019-01-16 17:32 : empty slot
-2019-01-16 17:33 : empty slot
-2019-01-16 17:34 : empty slot
-2019-01-16 17:35 : empty slot
-2019-01-16 17:36 : empty slot
-2019-01-16 17:37 : empty slot
-2019-01-16 17:38 : empty slot
-2019-01-16 17:39 : empty slot
-2019-01-16 17:40 : empty slot
-2019-01-16 17:41 : empty slot
-2019-01-16 17:42 : empty slot
-2019-01-16 17:43 : empty slot
-2019-01-16 17:44 : empty slot
-2019-01-16 17:45 : empty slot
-2019-01-16 17:46 : empty slot
-2019-01-16 17:47 : empty slot
-2019-01-16 17:48 : empty slot
-2019-01-16 17:49 : empty slot
-2019-01-16 17:50 : empty slot
-2019-01-16 17:51 : empty slot
-2019-01-16 17:52 : empty slot
-2019-01-16 17:53 : empty slot
-2019-01-16 17:54 : empty slot
-2019-01-16 17:55 : empty slot
-2019-01-16 17:56 : empty slot
-2019-01-16 17:57 : empty slot
-2019-01-16 17:58 : empty slot
-2019-01-16 17:59 : empty slot
-2019-01-16 18:00 : empty slot
-2019-01-16 18:01 : empty slot
-2019-01-16 18:02 : empty slot
-2019-01-16 18:03 : empty slot
-2019-01-16 18:04 : empty slot
-2019-01-16 18:05 : empty slot
-2019-01-16 18:06 : empty slot
-2019-01-16 18:07 : empty slot
-2019-01-16 18:08 : empty slot
-2019-01-16 18:09 : empty slot
-2019-01-16 18:10 : empty slot
-2019-01-16 18:11 : empty slot
-2019-01-16 18:12 : empty slot
-2019-01-16 18:13 : empty slot
-2019-01-16 18:14 : empty slot
-2019-01-16 18:15 : empty slot
-2019-01-16 18:16 : empty slot
-2019-01-16 18:17 : empty slot
-2019-01-16 18:18 : empty slot
-2019-01-16 18:19 : empty slot
-2019-01-16 18:20 : empty slot
-2019-01-16 18:21 : empty slot
-2019-01-16 18:22 : empty slot
-2019-01-16 18:23 : empty slot
-2019-01-16 18:24 : empty slot
-2019-01-16 18:25 : empty slot
-2019-01-16 18:26 : empty slot
-2019-01-16 18:27 : empty slot
-2019-01-16 18:28 : empty slot
-2019-01-16 18:29 : empty slot
-2019-01-16 18:30 : empty slot
-2019-01-16 18:31 : empty slot
-2019-01-16 18:32 : empty slot
-2019-01-16 18:33 : empty slot
-2019-01-16 18:34 : empty slot
-2019-01-16 18:35 : empty slot
-2019-01-16 18:36 : empty slot
-2019-01-16 18:37 : empty slot
-2019-01-16 18:38 : empty slot
-2019-01-16 18:39 : empty slot
-2019-01-16 18:40 : empty slot
-2019-01-16 18:41 : empty slot
-2019-01-16 18:42 : empty slot
-2019-01-16 18:43 : empty slot
-2019-01-16 18:44 : empty slot
-2019-01-16 18:45 : empty slot
-2019-01-16 18:46 : empty slot
-2019-01-16 18:47 : empty slot
-2019-01-16 18:48 : empty slot
-2019-01-16 18:49 : empty slot
-2019-01-16 18:50 : empty slot
-2019-01-16 18:51 : empty slot
-2019-01-16 18:52 : empty slot
-2019-01-16 18:53 : empty slot
-2019-01-16 18:54 : empty slot
-2019-01-16 18:55 : empty slot
-2019-01-16 18:56 : empty slot
-2019-01-16 18:57 : empty slot
-2019-01-16 18:58 : empty slot
-2019-01-16 18:59 : empty slot
-2019-01-16 19:00 : empty slot
-2019-01-16 19:01 : empty slot
-2019-01-16 19:02 : empty slot
-2019-01-16 19:03 : empty slot
-2019-01-16 19:04 : empty slot
-2019-01-16 19:05 : empty slot
-2019-01-16 19:06 : empty slot
-2019-01-16 19:07 : empty slot
-2019-01-16 19:08 : empty slot
-2019-01-16 19:09 : empty slot
-2019-01-16 19:10 : empty slot
-2019-01-16 19:11 : empty slot
-2019-01-16 19:12 : empty slot
-2019-01-16 19:13 : empty slot
-2019-01-16 19:14 : empty slot
-2019-01-16 19:15 : empty slot
-2019-01-16 19:16 : empty slot
-2019-01-16 19:17 : empty slot
-2019-01-16 19:18 : empty slot
-2019-01-16 19:19 : empty slot
-2019-01-16 19:20 : empty slot
-2019-01-16 19:21 : empty slot
-2019-01-16 19:22 : empty slot
-2019-01-16 19:23 : empty slot
-2019-01-16 19:24 : empty slot
-2019-01-16 19:25 : empty slot
-2019-01-16 19:26 : empty slot
-2019-01-16 19:27 : empty slot
-2019-01-16 19:28 : empty slot
-2019-01-16 19:29 : empty slot
-2019-01-16 19:30 : empty slot
-2019-01-16 19:31 : empty slot
-2019-01-16 19:32 : empty slot
-2019-01-16 19:33 : empty slot
-2019-01-16 19:34 : empty slot
-2019-01-16 19:35 : empty slot
-2019-01-16 19:36 : empty slot
-2019-01-16 19:37 : empty slot
-2019-01-16 19:38 : empty slot
-2019-01-16 19:39 : empty slot
-2019-01-16 19:40 : empty slot
-2019-01-16 19:41 : empty slot
-2019-01-16 19:42 : empty slot
-2019-01-16 19:43 : empty slot
-2019-01-16 19:44 : empty slot
-2019-01-16 19:45 : empty slot
-2019-01-16 19:46 : empty slot
-2019-01-16 19:47 : empty slot
-2019-01-16 19:48 : empty slot
-2019-01-16 19:49 : empty slot
-2019-01-16 19:50 : empty slot
-2019-01-16 19:51 : empty slot
-2019-01-16 19:52 : empty slot
-2019-01-16 19:53 : empty slot
-2019-01-16 19:54 : empty slot
-2019-01-16 19:55 : empty slot
-2019-01-16 19:56 : empty slot
-2019-01-16 19:57 : empty slot
-2019-01-16 19:58 : empty slot
-2019-01-16 19:59 : empty slot
-2019-01-16 20:00 : empty slot
-2019-01-16 20:01 : empty slot
-2019-01-16 20:02 : empty slot
-2019-01-16 20:03 : empty slot
-2019-01-16 20:04 : empty slot
-2019-01-16 20:05 : empty slot
-2019-01-16 20:06 : empty slot
-2019-01-16 20:07 : empty slot
-2019-01-16 20:08 : empty slot
-2019-01-16 20:09 : empty slot
-2019-01-16 20:10 : empty slot
-2019-01-16 20:11 : empty slot
-2019-01-16 20:12 : empty slot
-2019-01-16 20:13 : empty slot
-2019-01-16 20:14 : empty slot
-2019-01-16 20:15 : empty slot
-2019-01-16 20:16 : empty slot
-2019-01-16 20:17 : empty slot
-2019-01-16 20:18 : empty slot
-2019-01-16 20:19 : empty slot
-2019-01-16 20:20 : empty slot
-2019-01-16 20:21 : empty slot
-2019-01-16 20:22 : empty slot
-2019-01-16 20:23 : empty slot
-2019-01-16 20:24 : empty slot
-2019-01-16 20:25 : empty slot
-2019-01-16 20:26 : empty slot
-2019-01-16 20:27 : empty slot
-2019-01-16 20:28 : empty slot
-2019-01-16 20:29 : empty slot
-2019-01-16 20:30 : empty slot
-2019-01-16 20:31 : empty slot
-2019-01-16 20:32 : empty slot
-2019-01-16 20:33 : empty slot
-2019-01-16 20:34 : empty slot
-2019-01-16 20:35 : empty slot
-2019-01-16 20:36 : empty slot
-2019-01-16 20:37 : empty slot
-2019-01-16 20:38 : empty slot
-2019-01-16 20:39 : empty slot
-2019-01-16 20:40 : empty slot
-2019-01-16 20:41 : empty slot
-2019-01-16 20:42 : empty slot
-2019-01-16 20:43 : empty slot
-2019-01-16 20:44 : empty slot
-2019-01-16 20:45 : empty slot
-2019-01-16 20:46 : empty slot
-2019-01-16 20:47 : empty slot
-2019-01-16 20:48 : empty slot
-2019-01-16 20:49 : empty slot
-2019-01-16 20:50 : empty slot
-2019-01-16 20:51 : empty slot
-2019-01-16 20:52 : empty slot
-2019-01-16 20:53 : empty slot
-2019-01-16 20:54 : empty slot
-2019-01-16 20:55 : empty slot
-2019-01-16 20:56 : empty slot
-2019-01-16 20:57 : empty slot
-2019-01-16 20:58 : empty slot
-2019-01-16 20:59 : empty slot
-2019-01-16 21:00 : empty slot
-2019-01-16 21:01 : empty slot
-2019-01-16 21:02 : empty slot
-2019-01-16 21:03 : empty slot
-2019-01-16 21:04 : empty slot
-2019-01-16 21:05 : empty slot
-2019-01-16 21:06 : empty slot
-2019-01-16 21:07 : empty slot
-2019-01-16 21:08 : empty slot
-2019-01-16 21:09 : empty slot
-2019-01-16 21:10 : empty slot
-2019-01-16 21:11 : empty slot
-2019-01-16 21:12 : empty slot
-2019-01-16 21:13 : empty slot
-2019-01-16 21:14 : empty slot
-2019-01-16 21:15 : empty slot
-2019-01-16 21:16 : empty slot
-2019-01-16 21:17 : empty slot
-2019-01-16 21:18 : empty slot
-2019-01-16 21:19 : empty slot
-2019-01-16 21:20 : empty slot
-2019-01-16 21:21 : empty slot
-2019-01-16 21:22 : empty slot
-2019-01-16 21:23 : empty slot
-2019-01-16 21:24 : empty slot
-2019-01-16 21:25 : empty slot
-2019-01-16 21:26 : empty slot
-2019-01-16 21:27 : empty slot
-2019-01-16 21:28 : empty slot
-2019-01-16 21:29 : empty slot
-2019-01-16 21:30 : empty slot
-2019-01-16 21:31 : empty slot
-2019-01-16 21:32 : empty slot
-2019-01-16 21:33 : empty slot
-2019-01-16 21:34 : empty slot
-2019-01-16 21:35 : empty slot
-2019-01-16 21:36 : empty slot
-2019-01-16 21:37 : empty slot
-2019-01-16 21:38 : empty slot
-2019-01-16 21:39 : empty slot
-2019-01-16 21:40 : empty slot
-2019-01-16 21:41 : empty slot
-2019-01-16 21:42 : empty slot
-2019-01-16 21:43 : empty slot
-2019-01-16 21:44 : empty slot
-2019-01-16 21:45 : empty slot
-2019-01-16 21:46 : empty slot
-2019-01-16 21:47 : empty slot
-2019-01-16 21:48 : empty slot
-2019-01-16 21:49 : empty slot
-2019-01-16 21:50 : empty slot
-2019-01-16 21:51 : empty slot
-2019-01-16 21:52 : empty slot
-2019-01-16 21:53 : empty slot
-2019-01-16 21:54 : empty slot
-2019-01-16 21:55 : empty slot
-2019-01-16 21:56 : empty slot
-2019-01-16 21:57 : empty slot
-2019-01-16 21:58 : empty slot
-2019-01-16 21:59 : empty slot
-2019-01-16 22:00 : empty slot
-2019-01-16 22:01 : empty slot
-2019-01-16 22:02 : empty slot
-2019-01-16 22:03 : empty slot
-2019-01-16 22:04 : empty slot
-2019-01-16 22:05 : empty slot
-2019-01-16 22:06 : empty slot
-2019-01-16 22:07 : empty slot
-2019-01-16 22:08 : empty slot
-2019-01-16 22:09 : empty slot
-2019-01-16 22:10 : empty slot
-2019-01-16 22:11 : empty slot
-2019-01-16 22:12 : empty slot
-2019-01-16 22:13 : empty slot
-2019-01-16 22:14 : empty slot
-2019-01-16 22:15 : empty slot
-2019-01-16 22:16 : empty slot
-2019-01-16 22:17 : empty slot
-2019-01-16 22:18 : empty slot
-2019-01-16 22:19 : empty slot
-2019-01-16 22:20 : empty slot
-2019-01-16 22:21 : empty slot
-2019-01-16 22:22 : empty slot
-2019-01-16 22:23 : empty slot
-2019-01-16 22:24 : empty slot
-2019-01-16 22:25 : empty slot
-2019-01-16 22:26 : empty slot
-2019-01-16 22:27 : empty slot
-2019-01-16 22:28 : empty slot
-2019-01-16 22:29 : empty slot
-2019-01-16 22:30 : empty slot
-2019-01-16 22:31 : empty slot
-2019-01-16 22:32 : empty slot
-2019-01-16 22:33 : empty slot
-2019-01-16 22:34 : empty slot
-2019-01-16 22:35 : empty slot
-2019-01-16 22:36 : empty slot
-2019-01-16 22:37 : empty slot
-2019-01-16 22:38 : empty slot
-2019-01-16 22:39 : empty slot
-2019-01-16 22:40 : empty slot
-2019-01-16 22:41 : empty slot
-2019-01-16 22:42 : empty slot
-2019-01-16 22:43 : empty slot
-2019-01-16 22:44 : empty slot
-2019-01-16 22:45 : empty slot
-2019-01-16 22:46 : empty slot
-2019-01-16 22:47 : empty slot
-2019-01-16 22:48 : empty slot
-2019-01-16 22:49 : empty slot
-2019-01-16 22:50 : empty slot
-2019-01-16 22:51 : empty slot
-2019-01-16 22:52 : empty slot
-2019-01-16 22:53 : empty slot
-2019-01-16 22:54 : empty slot
-2019-01-16 22:55 : empty slot
-2019-01-16 22:56 : empty slot
-2019-01-16 22:57 : empty slot
-2019-01-16 22:58 : empty slot
-2019-01-16 22:59 : empty slot
-2019-01-16 23:00 : empty slot
-2019-01-16 23:01 : empty slot
-2019-01-16 23:02 : empty slot
-2019-01-16 23:03 : empty slot
-2019-01-16 23:04 : empty slot
-2019-01-16 23:05 : empty slot
-2019-01-16 23:06 : empty slot
-2019-01-16 23:07 : empty slot
-2019-01-16 23:08 : empty slot
-2019-01-16 23:09 : empty slot
-2019-01-16 23:10 : empty slot
-2019-01-16 23:11 : empty slot
-2019-01-16 23:12 : empty slot
-2019-01-16 23:13 : empty slot
-2019-01-16 23:14 : empty slot
-2019-01-16 23:15 : empty slot
-2019-01-16 23:16 : empty slot
-2019-01-16 23:17 : empty slot
-2019-01-16 23:18 : empty slot
-2019-01-16 23:19 : empty slot
-2019-01-16 23:20 : empty slot
-2019-01-16 23:21 : empty slot
-2019-01-16 23:22 : empty slot
-2019-01-16 23:23 : empty slot
-2019-01-16 23:24 : empty slot
-2019-01-16 23:25 : empty slot
-2019-01-16 23:26 : empty slot
-2019-01-16 23:27 : empty slot
-2019-01-16 23:28 : empty slot
-2019-01-16 23:29 : empty slot
-2019-01-16 23:30 : empty slot
-2019-01-16 23:31 : empty slot
-2019-01-16 23:32 : empty slot
-2019-01-16 23:33 : empty slot
-2019-01-16 23:34 : empty slot
-2019-01-16 23:35 : empty slot
-2019-01-16 23:36 : empty slot
-2019-01-16 23:37 : empty slot
-2019-01-16 23:38 : empty slot
-2019-01-16 23:39 : empty slot
-2019-01-16 23:40 : empty slot
-2019-01-16 23:41 : empty slot
-2019-01-16 23:42 : empty slot
-2019-01-16 23:43 : empty slot
-2019-01-16 23:44 : empty slot
-2019-01-16 23:45 : empty slot
-2019-01-16 23:46 : empty slot
-2019-01-16 23:47 : empty slot
-2019-01-16 23:48 : empty slot
-2019-01-16 23:49 : empty slot
-2019-01-16 23:50 : empty slot
-2019-01-16 23:51 : empty slot
-2019-01-16 23:52 : empty slot
-2019-01-16 23:53 : empty slot
-2019-01-16 23:54 : empty slot
-2019-01-16 23:55 : empty slot
-2019-01-16 23:56 : empty slot
-2019-01-16 23:57 : empty slot
-2019-01-16 23:58 : empty slot
-2019-01-16 23:59 : empty slot
-2019-01-17 00:00 : empty slot
-2019-01-17 00:01 : empty slot
-2019-01-17 00:02 : empty slot
-2019-01-17 00:03 : empty slot
-2019-01-17 00:04 : empty slot
-2019-01-17 00:05 : empty slot
-2019-01-17 00:06 : empty slot
-2019-01-17 00:07 : empty slot
-2019-01-17 00:08 : empty slot
-2019-01-17 00:09 : empty slot
-2019-01-17 00:10 : empty slot
-2019-01-17 00:11 : empty slot
-2019-01-17 00:12 : empty slot
-2019-01-17 00:13 : empty slot
-2019-01-17 00:14 : empty slot
-2019-01-17 00:15 : empty slot
-2019-01-17 00:16 : empty slot
-2019-01-17 00:17 : empty slot
-2019-01-17 00:18 : empty slot
-2019-01-17 00:19 : empty slot
-2019-01-17 00:20 : empty slot
-2019-01-17 00:21 : empty slot
-2019-01-17 00:22 : empty slot
-2019-01-17 00:23 : empty slot
-2019-01-17 00:24 : empty slot
-2019-01-17 00:25 : empty slot
-2019-01-17 00:26 : empty slot
-2019-01-17 00:27 : empty slot
-2019-01-17 00:28 : empty slot
-2019-01-17 00:29 : empty slot
-2019-01-17 00:30 : empty slot
-2019-01-17 00:31 : empty slot
-2019-01-17 00:32 : empty slot
-2019-01-17 00:33 : empty slot
-2019-01-17 00:34 : empty slot
-2019-01-17 00:35 : empty slot
-2019-01-17 00:36 : empty slot
-2019-01-17 00:37 : empty slot
-2019-01-17 00:38 : empty slot
-2019-01-17 00:39 : empty slot
-2019-01-17 00:40 : empty slot
-2019-01-17 00:41 : empty slot
-2019-01-17 00:42 : empty slot
-2019-01-17 00:43 : empty slot
-2019-01-17 00:44 : empty slot
-2019-01-17 00:45 : empty slot
-2019-01-17 00:46 : empty slot
-2019-01-17 00:47 : empty slot
-2019-01-17 00:48 : empty slot
-2019-01-17 00:49 : empty slot
-2019-01-17 00:50 : empty slot
-2019-01-17 00:51 : empty slot
-2019-01-17 00:52 : empty slot
-2019-01-17 00:53 : empty slot
-2019-01-17 00:54 : empty slot
-2019-01-17 00:55 : empty slot
-2019-01-17 00:56 : empty slot
-2019-01-17 00:57 : empty slot
-2019-01-17 00:58 : empty slot
-2019-01-17 00:59 : empty slot
-2019-01-17 01:00 : empty slot
-2019-01-17 01:01 : empty slot
-2019-01-17 01:02 : empty slot
-2019-01-17 01:03 : empty slot
-2019-01-17 01:04 : empty slot
-2019-01-17 01:05 : empty slot
-2019-01-17 01:06 : empty slot
-2019-01-17 01:07 : empty slot
-2019-01-17 01:08 : empty slot
-2019-01-17 01:09 : empty slot
-2019-01-17 01:10 : empty slot
-2019-01-17 01:11 : empty slot
-2019-01-17 01:12 : empty slot
-2019-01-17 01:13 : empty slot
-2019-01-17 01:14 : empty slot
-2019-01-17 01:15 : empty slot
-2019-01-17 01:16 : empty slot
-2019-01-17 01:17 : empty slot
-2019-01-17 01:18 : empty slot
-2019-01-17 01:19 : empty slot
-2019-01-17 01:20 : empty slot
-2019-01-17 01:21 : empty slot
-2019-01-17 01:22 : empty slot
-2019-01-17 01:23 : empty slot
-2019-01-17 01:24 : empty slot
-2019-01-17 01:25 : empty slot
-2019-01-17 01:26 : empty slot
-2019-01-17 01:27 : empty slot
-2019-01-17 01:28 : empty slot
-2019-01-17 01:29 : empty slot
-2019-01-17 01:30 : empty slot
-2019-01-17 01:31 : empty slot
-2019-01-17 01:32 : empty slot
-2019-01-17 01:33 : empty slot
-2019-01-17 01:34 : empty slot
-2019-01-17 01:35 : empty slot
-2019-01-17 01:36 : empty slot
-2019-01-17 01:37 : empty slot
-2019-01-17 01:38 : empty slot
-2019-01-17 01:39 : empty slot
-2019-01-17 01:40 : empty slot
-2019-01-17 01:41 : empty slot
-2019-01-17 01:42 : empty slot
-2019-01-17 01:43 : empty slot
-2019-01-17 01:44 : empty slot
-2019-01-17 01:45 : empty slot
-2019-01-17 01:46 : empty slot
-2019-01-17 01:47 : empty slot
-2019-01-17 01:48 : empty slot
-2019-01-17 01:49 : empty slot
-2019-01-17 01:50 : empty slot
-2019-01-17 01:51 : empty slot
-2019-01-17 01:52 : empty slot
-2019-01-17 01:53 : empty slot
-2019-01-17 01:54 : empty slot
-2019-01-17 01:55 : empty slot
-2019-01-17 01:56 : empty slot
-2019-01-17 01:57 : empty slot
-2019-01-17 01:58 : empty slot
-2019-01-17 01:59 : empty slot
-2019-01-17 02:00 : empty slot
-2019-01-17 02:01 : empty slot
-2019-01-17 02:02 : empty slot
-2019-01-17 02:03 : empty slot
-2019-01-17 02:04 : empty slot
-2019-01-17 02:05 : empty slot
-2019-01-17 02:06 : empty slot
-2019-01-17 02:07 : empty slot
-2019-01-17 02:08 : empty slot
-2019-01-17 02:09 : empty slot
-2019-01-17 02:10 : empty slot
-2019-01-17 02:11 : empty slot
-2019-01-17 02:12 : empty slot
-2019-01-17 02:13 : empty slot
-2019-01-17 02:14 : empty slot
-2019-01-17 02:15 : empty slot
-2019-01-17 02:16 : empty slot
-2019-01-17 02:17 : empty slot
-2019-01-17 02:18 : empty slot
-2019-01-17 02:19 : empty slot
-2019-01-17 02:20 : empty slot
-2019-01-17 02:21 : empty slot
-2019-01-17 02:22 : empty slot
-2019-01-17 02:23 : empty slot
-2019-01-17 02:24 : empty slot
-2019-01-17 02:25 : empty slot
-2019-01-17 02:26 : empty slot
-2019-01-17 02:27 : empty slot
-2019-01-17 02:28 : empty slot
-2019-01-17 02:29 : empty slot
-2019-01-17 02:30 : empty slot
-2019-01-17 02:31 : empty slot
-2019-01-17 02:32 : empty slot
-2019-01-17 02:33 : empty slot
-2019-01-17 02:34 : empty slot
-2019-01-17 02:35 : empty slot
-2019-01-17 02:36 : empty slot
-2019-01-17 02:37 : empty slot
-2019-01-17 02:38 : empty slot
-2019-01-17 02:39 : empty slot
-2019-01-17 02:40 : empty slot
-2019-01-17 02:41 : empty slot
-2019-01-17 02:42 : empty slot
-2019-01-17 02:43 : empty slot
-2019-01-17 02:44 : empty slot
-2019-01-17 02:45 : empty slot
-2019-01-17 02:46 : empty slot
-2019-01-17 02:47 : empty slot
-2019-01-17 02:48 : empty slot
-2019-01-17 02:49 : empty slot
-2019-01-17 02:50 : empty slot
-2019-01-17 02:51 : empty slot
-2019-01-17 02:52 : empty slot
-2019-01-17 02:53 : empty slot
-2019-01-17 02:54 : empty slot
-2019-01-17 02:55 : empty slot
-2019-01-17 02:56 : empty slot
-2019-01-17 02:57 : empty slot
-2019-01-17 02:58 : empty slot
-2019-01-17 02:59 : empty slot
-2019-01-17 03:00 : empty slot
-2019-01-17 03:01 : empty slot
-2019-01-17 03:02 : empty slot
-2019-01-17 03:03 : empty slot
-2019-01-17 03:04 : empty slot
-2019-01-17 03:05 : empty slot
-2019-01-17 03:06 : empty slot
-2019-01-17 03:07 : empty slot
-2019-01-17 03:08 : empty slot
-2019-01-17 03:09 : empty slot
-2019-01-17 03:10 : empty slot
-2019-01-17 03:11 : empty slot
-2019-01-17 03:12 : empty slot
-2019-01-17 03:13 : empty slot
-2019-01-17 03:14 : empty slot
-2019-01-17 03:15 : empty slot
-2019-01-17 03:16 : empty slot
-2019-01-17 03:17 : empty slot
-2019-01-17 03:18 : empty slot
-2019-01-17 03:19 : empty slot
-2019-01-17 03:20 : empty slot
-2019-01-17 03:21 : empty slot
-2019-01-17 03:22 : empty slot
-2019-01-17 03:23 : empty slot
-2019-01-17 03:24 : empty slot
-2019-01-17 03:25 : empty slot
-2019-01-17 03:26 : empty slot
-2019-01-17 03:27 : empty slot
-2019-01-17 03:28 : empty slot
-2019-01-17 03:29 : empty slot
-2019-01-17 03:30 : empty slot
-2019-01-17 03:31 : empty slot
-2019-01-17 03:32 : empty slot
-2019-01-17 03:33 : empty slot
-2019-01-17 03:34 : empty slot
-2019-01-17 03:35 : empty slot
-2019-01-17 03:36 : empty slot
-2019-01-17 03:37 : empty slot
-2019-01-17 03:38 : empty slot
-2019-01-17 03:39 : empty slot
-2019-01-17 03:40 : empty slot
-2019-01-17 03:41 : empty slot
-2019-01-17 03:42 : empty slot
-2019-01-17 03:43 : empty slot
-2019-01-17 03:44 : empty slot
-2019-01-17 03:45 : empty slot
-2019-01-17 03:46 : empty slot
-2019-01-17 03:47 : empty slot
-2019-01-17 03:48 : empty slot
-2019-01-17 03:49 : empty slot
-2019-01-17 03:50 : empty slot
-2019-01-17 03:51 : empty slot
-2019-01-17 03:52 : empty slot
-2019-01-17 03:53 : empty slot
-2019-01-17 03:54 : empty slot
-2019-01-17 03:55 : empty slot
-2019-01-17 03:56 : empty slot
-2019-01-17 03:57 : empty slot
-2019-01-17 03:58 : empty slot
-2019-01-17 03:59 : empty slot
-2019-01-17 04:00 : empty slot
-2019-01-17 04:01 : empty slot
-2019-01-17 04:02 : empty slot
-2019-01-17 04:03 : empty slot
-2019-01-17 04:04 : empty slot
-2019-01-17 04:05 : empty slot
-2019-01-17 04:06 : empty slot
-2019-01-17 04:07 : empty slot
-2019-01-17 04:08 : empty slot
-2019-01-17 04:09 : empty slot
-2019-01-17 04:10 : empty slot
-2019-01-17 04:11 : empty slot
-2019-01-17 04:12 : empty slot
-2019-01-17 04:13 : empty slot
-2019-01-17 04:14 : empty slot
-2019-01-17 04:15 : empty slot
-2019-01-17 04:16 : empty slot
-2019-01-17 04:17 : empty slot
-2019-01-17 04:18 : empty slot
-2019-01-17 04:19 : empty slot
-2019-01-17 04:20 : empty slot
-2019-01-17 04:21 : empty slot
-2019-01-17 04:22 : empty slot
-2019-01-17 04:23 : empty slot
-2019-01-17 04:24 : empty slot
-2019-01-17 04:25 : empty slot
-2019-01-17 04:26 : empty slot
-2019-01-17 04:27 : empty slot
-2019-01-17 04:28 : empty slot
-2019-01-17 04:29 : empty slot
-2019-01-17 04:30 : empty slot
-2019-01-17 04:31 : empty slot
-2019-01-17 04:32 : empty slot
-2019-01-17 04:33 : empty slot
-2019-01-17 04:34 : empty slot
-2019-01-17 04:35 : empty slot
-2019-01-17 04:36 : empty slot
-2019-01-17 04:37 : empty slot
-2019-01-17 04:38 : empty slot
-2019-01-17 04:39 : empty slot
-2019-01-17 04:40 : empty slot
-2019-01-17 04:41 : empty slot
-2019-01-17 04:42 : empty slot
-2019-01-17 04:43 : empty slot
-2019-01-17 04:44 : empty slot
-2019-01-17 04:45 : empty slot
-2019-01-17 04:46 : empty slot
-2019-01-17 04:47 : empty slot
-2019-01-17 04:48 : empty slot
-2019-01-17 04:49 : empty slot
-2019-01-17 04:50 : empty slot
-2019-01-17 04:51 : empty slot
-2019-01-17 04:52 : empty slot
-2019-01-17 04:53 : empty slot
-2019-01-17 04:54 : empty slot
-2019-01-17 04:55 : empty slot
-2019-01-17 04:56 : empty slot
-2019-01-17 04:57 : empty slot
-2019-01-17 04:58 : empty slot
-2019-01-17 04:59 : empty slot
-2019-01-17 05:00 : empty slot
-2019-01-17 05:01 : empty slot
-2019-01-17 05:02 : empty slot
-2019-01-17 05:03 : empty slot
-2019-01-17 05:04 : empty slot
-2019-01-17 05:05 : empty slot
-2019-01-17 05:06 : empty slot
-2019-01-17 05:07 : empty slot
-2019-01-17 05:08 : empty slot
-2019-01-17 05:09 : empty slot
-2019-01-17 05:10 : empty slot
-2019-01-17 05:11 : empty slot
-2019-01-17 05:12 : empty slot
-2019-01-17 05:13 : empty slot
-2019-01-17 05:14 : empty slot
-2019-01-17 05:15 : empty slot
-2019-01-17 05:16 : empty slot
-2019-01-17 05:17 : empty slot
-2019-01-17 05:18 : empty slot
-2019-01-17 05:19 : empty slot
-2019-01-17 05:20 : empty slot
-2019-01-17 05:21 : empty slot
-2019-01-17 05:22 : empty slot
-2019-01-17 05:23 : empty slot
-2019-01-17 05:24 : empty slot
-2019-01-17 05:25 : empty slot
-2019-01-17 05:26 : empty slot
-2019-01-17 05:27 : empty slot
-2019-01-17 05:28 : empty slot
-2019-01-17 05:29 : empty slot
-2019-01-17 05:30 : empty slot
-2019-01-17 05:31 : empty slot
-2019-01-17 05:32 : empty slot
-2019-01-17 05:33 : empty slot
-2019-01-17 05:34 : empty slot
-2019-01-17 05:35 : empty slot
-2019-01-17 05:36 : empty slot
-2019-01-17 05:37 : empty slot
-2019-01-17 05:38 : empty slot
-2019-01-17 05:39 : empty slot
-2019-01-17 05:40 : empty slot
-2019-01-17 05:41 : empty slot
-2019-01-17 05:42 : empty slot
-2019-01-17 05:43 : empty slot
-2019-01-17 05:44 : empty slot
-2019-01-17 05:45 : empty slot
-2019-01-17 05:46 : empty slot
-2019-01-17 05:47 : empty slot
-2019-01-17 05:48 : empty slot
-2019-01-17 05:49 : empty slot
-2019-01-17 05:50 : empty slot
-2019-01-17 05:51 : empty slot
-2019-01-17 05:52 : empty slot
-2019-01-17 05:53 : empty slot
-2019-01-17 05:54 : empty slot
-2019-01-17 05:55 : empty slot
-2019-01-17 05:56 : empty slot
-2019-01-17 05:57 : empty slot
-2019-01-17 05:58 : empty slot
-2019-01-17 05:59 : empty slot
-2019-01-17 06:00 : empty slot
-2019-01-17 06:01 : empty slot
-2019-01-17 06:02 : empty slot
-2019-01-17 06:03 : empty slot
-2019-01-17 06:04 : empty slot
-2019-01-17 06:05 : empty slot
-2019-01-17 06:06 : empty slot
-2019-01-17 06:07 : empty slot
-2019-01-17 06:08 : empty slot
-2019-01-17 06:09 : empty slot
-2019-01-17 06:10 : empty slot
-2019-01-17 06:11 : empty slot
-2019-01-17 06:12 : empty slot
-2019-01-17 06:13 : empty slot
-2019-01-17 06:14 : empty slot
-2019-01-17 06:15 : empty slot
-2019-01-17 06:16 : empty slot
-2019-01-17 06:17 : empty slot
-2019-01-17 06:18 : empty slot
-2019-01-17 06:19 : empty slot
-2019-01-17 06:20 : empty slot
-2019-01-17 06:21 : empty slot
-2019-01-17 06:22 : empty slot
-2019-01-17 06:23 : empty slot
-2019-01-17 06:24 : empty slot
-2019-01-17 06:25 : empty slot
-2019-01-17 06:26 : empty slot
-2019-01-17 06:27 : empty slot
-2019-01-17 06:28 : empty slot
-2019-01-17 06:29 : empty slot
-2019-01-17 06:30 : empty slot
-2019-01-17 06:31 : empty slot
-2019-01-17 06:32 : empty slot
-2019-01-17 06:33 : empty slot
-2019-01-17 06:34 : empty slot
-2019-01-17 06:35 : empty slot
-2019-01-17 06:36 : empty slot
-2019-01-17 06:37 : empty slot
-2019-01-17 06:38 : empty slot
-2019-01-17 06:39 : empty slot
-2019-01-17 06:40 : empty slot
-2019-01-17 06:41 : empty slot
-2019-01-17 06:42 : empty slot
-2019-01-17 06:43 : empty slot
-2019-01-17 06:44 : empty slot
-2019-01-17 06:45 : empty slot
-2019-01-17 06:46 : empty slot
-2019-01-17 06:47 : empty slot
-2019-01-17 06:48 : empty slot
-2019-01-17 06:49 : empty slot
-2019-01-17 06:50 : empty slot
-2019-01-17 06:51 : empty slot
-2019-01-17 06:52 : empty slot
-2019-01-17 06:53 : empty slot
-2019-01-17 06:54 : empty slot
-2019-01-17 06:55 : empty slot
-2019-01-17 06:56 : empty slot
-2019-01-17 06:57 : empty slot
-2019-01-17 06:58 : empty slot
-2019-01-17 06:59 : empty slot
-2019-01-17 07:00 : empty slot
-2019-01-17 07:01 : empty slot
-2019-01-17 07:02 : empty slot
-2019-01-17 07:03 : empty slot
-2019-01-17 07:04 : empty slot
-2019-01-17 07:05 : empty slot
-2019-01-17 07:06 : empty slot
-2019-01-17 07:07 : empty slot
-2019-01-17 07:08 : empty slot
-2019-01-17 07:09 : empty slot
-2019-01-17 07:10 : empty slot
-2019-01-17 07:11 : empty slot
-2019-01-17 07:12 : empty slot
-2019-01-17 07:13 : empty slot
-2019-01-17 07:14 : empty slot
-2019-01-17 07:15 : empty slot
-2019-01-17 07:16 : empty slot
-2019-01-17 07:17 : empty slot
-2019-01-17 07:18 : empty slot
-2019-01-17 07:19 : empty slot
-2019-01-17 07:20 : empty slot
-2019-01-17 07:21 : empty slot
-2019-01-17 07:22 : empty slot
-2019-01-17 07:23 : empty slot
-2019-01-17 07:24 : empty slot
-2019-01-17 07:25 : empty slot
-2019-01-17 07:26 : empty slot
-2019-01-17 07:27 : empty slot
-2019-01-17 07:28 : empty slot
-2019-01-17 07:29 : empty slot
-2019-01-17 07:30 : empty slot
-2019-01-17 07:31 : empty slot
-2019-01-17 07:32 : empty slot
-2019-01-17 07:33 : empty slot
-2019-01-17 07:34 : empty slot
-2019-01-17 07:35 : empty slot
-2019-01-17 07:36 : empty slot
-2019-01-17 07:37 : empty slot
-2019-01-17 07:38 : empty slot
-2019-01-17 07:39 : empty slot
-2019-01-17 07:40 : empty slot
-2019-01-17 07:41 : empty slot
-2019-01-17 07:42 : empty slot
-2019-01-17 07:43 : empty slot
-2019-01-17 07:44 : empty slot
-2019-01-17 07:45 : empty slot
-2019-01-17 07:46 : empty slot
-2019-01-17 07:47 : empty slot
-2019-01-17 07:48 : empty slot
-2019-01-17 07:49 : empty slot
-2019-01-17 07:50 : empty slot
-2019-01-17 07:51 : empty slot
-2019-01-17 07:52 : empty slot
-2019-01-17 07:53 : empty slot
-2019-01-17 07:54 : empty slot
-2019-01-17 07:55 : empty slot
-2019-01-17 07:56 : empty slot
-2019-01-17 07:57 : empty slot
-2019-01-17 07:58 : empty slot
-2019-01-17 07:59 : empty slot
-2019-01-17 08:00 : empty slot
-2019-01-17 08:01 : empty slot
-2019-01-17 08:02 : empty slot
-2019-01-17 08:03 : empty slot
-2019-01-17 08:04 : empty slot
-2019-01-17 08:05 : empty slot
-2019-01-17 08:06 : empty slot
-2019-01-17 08:07 : empty slot
-2019-01-17 08:08 : empty slot
-2019-01-17 08:09 : empty slot
-2019-01-17 08:10 : empty slot
-2019-01-17 08:11 : empty slot
-2019-01-17 08:12 : empty slot
-2019-01-17 08:13 : empty slot
-2019-01-17 08:14 : empty slot
-2019-01-17 08:15 : empty slot
-2019-01-17 08:16 : empty slot
-2019-01-17 08:17 : empty slot
-2019-01-17 08:18 : empty slot
-2019-01-17 08:19 : empty slot
-2019-01-17 08:20 : empty slot
-2019-01-17 08:21 : empty slot
-2019-01-17 08:22 : empty slot
-2019-01-17 08:23 : empty slot
-2019-01-17 08:24 : empty slot
-2019-01-17 08:25 : empty slot
-2019-01-17 08:26 : empty slot
-2019-01-17 08:27 : empty slot
-2019-01-17 08:28 : empty slot
-2019-01-17 08:29 : empty slot
-2019-01-17 08:30 : empty slot
-2019-01-17 08:31 : empty slot
-2019-01-17 08:32 : empty slot
-2019-01-17 08:33 : empty slot
-2019-01-17 08:34 : empty slot
-2019-01-17 08:35 : empty slot
-2019-01-17 08:36 : empty slot
-2019-01-17 08:37 : empty slot
-2019-01-17 08:38 : empty slot
-2019-01-17 08:39 : empty slot
-2019-01-17 08:40 : empty slot
-2019-01-17 08:41 : empty slot
-2019-01-17 08:42 : empty slot
-2019-01-17 08:43 : empty slot
-2019-01-17 08:44 : empty slot
-2019-01-17 08:45 : empty slot
-2019-01-17 08:46 : empty slot
-2019-01-17 08:47 : empty slot
-2019-01-17 08:48 : empty slot
-2019-01-17 08:49 : empty slot
-2019-01-17 08:50 : empty slot
-2019-01-17 08:51 : empty slot
-2019-01-17 08:52 : empty slot
-2019-01-17 08:53 : empty slot
-2019-01-17 08:54 : empty slot
-2019-01-17 08:55 : empty slot
-2019-01-17 08:56 : empty slot
-2019-01-17 08:57 : empty slot
-2019-01-17 08:58 : empty slot
-2019-01-17 08:59 : empty slot
-2019-01-17 09:00 : empty slot
-2019-01-17 09:01 : empty slot
-2019-01-17 09:02 : empty slot
-2019-01-17 09:03 : empty slot
-2019-01-17 09:04 : empty slot
-2019-01-17 09:05 : empty slot
-2019-01-17 09:06 : empty slot
-2019-01-17 09:07 : empty slot
-2019-01-17 09:08 : empty slot
-2019-01-17 09:09 : empty slot
-2019-01-17 09:10 : empty slot
-2019-01-17 09:11 : empty slot
-2019-01-17 09:12 : empty slot
-2019-01-17 09:13 : empty slot
-2019-01-17 09:14 : empty slot
-2019-01-17 09:15 : empty slot
-2019-01-17 09:16 : empty slot
-2019-01-17 09:17 : empty slot
-2019-01-17 09:18 : empty slot
-2019-01-17 09:19 : empty slot
-2019-01-17 09:20 : empty slot
-2019-01-17 09:21 : empty slot
-2019-01-17 09:22 : empty slot
-2019-01-17 09:23 : empty slot
-2019-01-17 09:24 : empty slot
-2019-01-17 09:25 : empty slot
-2019-01-17 09:26 : empty slot
-2019-01-17 09:27 : empty slot
-2019-01-17 09:28 : empty slot
-2019-01-17 09:29 : empty slot
-2019-01-17 09:30 : empty slot
-2019-01-17 09:31 : empty slot
-2019-01-17 09:32 : empty slot
-2019-01-17 09:33 : empty slot
-2019-01-17 09:34 : empty slot
-2019-01-17 09:35 : empty slot
-2019-01-17 09:36 : empty slot
-2019-01-17 09:37 : empty slot
-2019-01-17 09:38 : empty slot
-2019-01-17 09:39 : empty slot
-2019-01-17 09:40 : empty slot
-2019-01-17 09:41 : empty slot
-2019-01-17 09:42 : empty slot
-2019-01-17 09:43 : empty slot
-2019-01-17 09:44 : empty slot
-2019-01-17 09:45 : empty slot
-2019-01-17 09:46 : empty slot
-2019-01-17 09:47 : empty slot
-2019-01-17 09:48 : empty slot
-2019-01-17 09:49 : empty slot
-2019-01-17 09:50 : empty slot
-2019-01-17 09:51 : empty slot
-2019-01-17 09:52 : empty slot
-2019-01-17 09:53 : empty slot
-2019-01-17 09:54 : empty slot
-2019-01-17 09:55 : empty slot
-2019-01-17 09:56 : empty slot
-2019-01-17 09:57 : empty slot
-2019-01-17 09:58 : empty slot
-2019-01-17 09:59 : empty slot
-2019-01-17 10:00 : empty slot
-2019-01-17 10:01 : empty slot
-2019-01-17 10:02 : empty slot
-2019-01-17 10:03 : empty slot
-2019-01-17 10:04 : empty slot
-2019-01-17 10:05 : empty slot
-2019-01-17 10:06 : empty slot
-2019-01-17 10:07 : empty slot
-2019-01-17 10:08 : empty slot
-2019-01-17 10:09 : empty slot
-2019-01-17 10:10 : empty slot
-2019-01-17 10:11 : empty slot
-2019-01-17 10:12 : empty slot
-2019-01-17 10:13 : empty slot
-2019-01-17 10:14 : empty slot
-2019-01-17 10:15 : empty slot
-2019-01-17 10:16 : empty slot
-2019-01-17 10:17 : empty slot
-2019-01-17 10:18 : empty slot
-2019-01-17 10:19 : empty slot
-2019-01-17 10:20 : empty slot
-2019-01-17 10:21 : empty slot
-2019-01-17 10:22 : empty slot
-2019-01-17 10:23 : empty slot
-2019-01-17 10:24 : empty slot
-2019-01-17 10:25 : empty slot
-2019-01-17 10:26 : empty slot
-2019-01-17 10:27 : empty slot
-2019-01-17 10:28 : empty slot
-2019-01-17 10:29 : empty slot
-2019-01-17 10:30 : empty slot
-2019-01-17 10:31 : empty slot
-2019-01-17 10:32 : empty slot
-2019-01-17 10:33 : empty slot
-2019-01-17 10:34 : empty slot
-2019-01-17 10:35 : empty slot
-2019-01-17 10:36 : empty slot
-2019-01-17 10:37 : empty slot
-2019-01-17 10:38 : empty slot
-2019-01-17 10:39 : empty slot
-2019-01-17 10:40 : empty slot
-2019-01-17 10:41 : empty slot
-2019-01-17 10:42 : empty slot
-2019-01-17 10:43 : empty slot
-2019-01-17 10:44 : empty slot
-2019-01-17 10:45 : empty slot
-2019-01-17 10:46 : empty slot
-2019-01-17 10:47 : empty slot
-2019-01-17 10:48 : empty slot
-2019-01-17 10:49 : empty slot
-2019-01-17 10:50 : empty slot
-2019-01-17 10:51 : empty slot
-2019-01-17 10:52 : empty slot
-2019-01-17 10:53 : empty slot
-2019-01-17 10:54 : empty slot
-2019-01-17 10:55 : empty slot
-2019-01-17 10:56 : empty slot
-2019-01-17 10:57 : empty slot
-2019-01-17 10:58 : empty slot
-2019-01-17 10:59 : empty slot
-2019-01-17 11:00 : empty slot
-2019-01-17 11:01 : empty slot
-2019-01-17 11:02 : empty slot
-2019-01-17 11:03 : empty slot
-2019-01-17 11:04 : empty slot
-2019-01-17 11:05 : empty slot
-2019-01-17 11:06 : empty slot
-2019-01-17 11:07 : empty slot
-2019-01-17 11:08 : empty slot
-2019-01-17 11:09 : empty slot
-2019-01-17 11:10 : empty slot
-2019-01-17 11:11 : empty slot
-2019-01-17 11:12 : empty slot
-2019-01-17 11:13 : empty slot
-2019-01-17 11:14 : empty slot
-2019-01-17 11:15 : empty slot
-2019-01-17 11:16 : empty slot
-2019-01-17 11:17 : empty slot
-2019-01-17 11:18 : empty slot
-2019-01-17 11:19 : empty slot
-2019-01-17 11:20 : empty slot
-2019-01-17 11:21 : empty slot
-2019-01-17 11:22 : empty slot
-2019-01-17 11:23 : empty slot
-2019-01-17 11:24 : empty slot
-2019-01-17 11:25 : empty slot
-2019-01-17 11:26 : empty slot
-2019-01-17 11:27 : empty slot
-2019-01-17 11:28 : empty slot
-2019-01-17 11:29 : empty slot
-2019-01-17 11:30 : empty slot
-2019-01-17 11:31 : empty slot
-2019-01-17 11:32 : empty slot
-2019-01-17 11:33 : empty slot
-2019-01-17 11:34 : empty slot
-2019-01-17 11:35 : empty slot
-2019-01-17 11:36 : empty slot
-2019-01-17 11:37 : empty slot
-2019-01-17 11:38 : empty slot
-2019-01-17 11:39 : empty slot
-2019-01-17 11:40 : empty slot
-2019-01-17 11:41 : empty slot
-2019-01-17 11:42 : empty slot
-2019-01-17 11:43 : empty slot
-2019-01-17 11:44 : empty slot
-2019-01-17 11:45 : empty slot
-2019-01-17 11:46 : empty slot
-2019-01-17 11:47 : empty slot
-2019-01-17 11:48 : empty slot
-2019-01-17 11:49 : empty slot
-2019-01-17 11:50 : empty slot
-2019-01-17 11:51 : empty slot
-2019-01-17 11:52 : empty slot
-2019-01-17 11:53 : empty slot
-2019-01-17 11:54 : empty slot
-2019-01-17 11:55 : empty slot
-2019-01-17 11:56 : empty slot
-2019-01-17 11:57 : empty slot
-2019-01-17 11:58 : empty slot
-2019-01-17 11:59 : empty slot
-2019-01-17 12:00 : empty slot
-2019-01-17 12:01 : empty slot
-2019-01-17 12:02 : empty slot
-2019-01-17 12:03 : empty slot
-2019-01-17 12:04 : empty slot
-2019-01-17 12:05 : empty slot
-2019-01-17 12:06 : empty slot
-2019-01-17 12:07 : empty slot
-2019-01-17 12:08 : empty slot
-2019-01-17 12:09 : empty slot
-2019-01-17 12:10 : empty slot
-2019-01-17 12:11 : empty slot
-2019-01-17 12:12 : empty slot
-2019-01-17 12:13 : empty slot
-2019-01-17 12:14 : empty slot
-2019-01-17 12:15 : empty slot
-2019-01-17 12:16 : empty slot
-2019-01-17 12:17 : empty slot
-2019-01-17 12:18 : empty slot
-2019-01-17 12:19 : empty slot
-2019-01-17 12:20 : empty slot
-2019-01-17 12:21 : empty slot
-2019-01-17 12:22 : empty slot
-2019-01-17 12:23 : empty slot
-2019-01-17 12:24 : empty slot
-2019-01-17 12:25 : empty slot
-2019-01-17 12:26 : empty slot
-2019-01-17 12:27 : empty slot
-2019-01-17 12:28 : empty slot
-2019-01-17 12:29 : empty slot
-2019-01-17 12:30 : empty slot
-2019-01-17 12:31 : empty slot
-2019-01-17 12:32 : empty slot
-2019-01-17 12:33 : empty slot
-2019-01-17 12:34 : empty slot
-2019-01-17 12:35 : empty slot
-2019-01-17 12:36 : empty slot
+2019-01-16 14:34 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:35 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:36 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:37 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:38 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:39 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:40 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:41 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:42 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:43 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:44 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:45 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:46 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:47 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:48 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:49 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:50 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:51 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:52 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:53 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:54 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:55 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:56 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:57 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:58 :     549356,  549356000, 11536476000,     0
+2019-01-16 14:59 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:00 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:01 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:02 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:03 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:04 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:05 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:06 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:07 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:08 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:09 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:10 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:11 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:12 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:13 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:14 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:15 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:16 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:17 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:18 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:19 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:20 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:21 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:22 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:23 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:24 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:25 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:26 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:27 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:28 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:29 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:30 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:31 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:32 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:33 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:34 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:35 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:36 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:37 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:38 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:39 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:40 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:41 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:42 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:43 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:44 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:45 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:46 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:47 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:48 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:49 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:50 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:51 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:52 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:53 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:54 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:55 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:56 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:57 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:58 :     549356,  549356000, 11536476000,     0
+2019-01-16 15:59 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:00 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:01 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:02 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:03 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:04 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:05 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:06 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:07 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:08 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:09 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:10 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:11 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:12 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:13 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:14 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:15 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:16 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:17 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:18 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:19 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:20 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:21 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:22 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:23 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:24 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:25 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:26 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:27 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:28 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:29 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:30 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:31 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:32 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:33 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:34 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:35 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:36 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:37 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:38 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:39 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:40 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:41 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:42 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:43 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:44 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:45 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:46 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:47 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:48 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:49 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:50 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:51 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:52 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:53 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:54 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:55 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:56 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:57 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:58 :     549356,  549356000, 11536476000,     0
+2019-01-16 16:59 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:00 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:01 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:02 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:03 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:04 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:05 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:06 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:07 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:08 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:09 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:10 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:11 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:12 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:13 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:14 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:15 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:16 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:17 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:18 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:19 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:20 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:21 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:22 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:23 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:24 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:25 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:26 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:27 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:28 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:29 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:30 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:31 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:32 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:33 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:34 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:35 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:36 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:37 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:38 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:39 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:40 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:41 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:42 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:43 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:44 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:45 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:46 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:47 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:48 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:49 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:50 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:51 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:52 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:53 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:54 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:55 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:56 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:57 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:58 :     549356,  549356000, 11536476000,     0
+2019-01-16 17:59 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:00 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:01 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:02 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:03 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:04 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:05 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:06 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:07 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:08 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:09 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:10 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:11 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:12 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:13 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:14 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:15 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:16 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:17 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:18 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:19 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:20 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:21 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:22 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:23 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:24 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:25 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:26 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:27 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:28 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:29 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:30 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:31 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:32 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:33 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:34 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:35 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:36 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:37 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:38 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:39 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:40 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:41 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:42 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:43 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:44 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:45 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:46 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:47 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:48 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:49 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:50 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:51 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:52 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:53 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:54 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:55 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:56 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:57 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:58 :     549356,  549356000, 11536476000,     0
+2019-01-16 18:59 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:00 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:01 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:02 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:03 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:04 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:05 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:06 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:07 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:08 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:09 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:10 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:11 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:12 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:13 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:14 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:15 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:16 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:17 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:18 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:19 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:20 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:21 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:22 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:23 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:24 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:25 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:26 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:27 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:28 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:29 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:30 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:31 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:32 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:33 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:34 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:35 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:36 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:37 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:38 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:39 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:40 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:41 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:42 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:43 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:44 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:45 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:46 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:47 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:48 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:49 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:50 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:51 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:52 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:53 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:54 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:55 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:56 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:57 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:58 :     549356,  549356000, 11536476000,     0
+2019-01-16 19:59 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:00 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:01 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:02 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:03 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:04 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:05 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:06 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:07 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:08 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:09 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:10 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:11 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:12 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:13 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:14 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:15 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:16 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:17 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:18 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:19 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:20 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:21 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:22 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:23 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:24 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:25 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:26 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:27 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:28 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:29 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:30 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:31 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:32 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:33 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:34 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:35 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:36 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:37 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:38 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:39 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:40 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:41 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:42 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:43 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:44 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:45 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:46 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:47 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:48 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:49 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:50 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:51 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:52 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:53 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:54 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:55 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:56 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:57 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:58 :     549356,  549356000, 11536476000,     0
+2019-01-16 20:59 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:00 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:01 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:02 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:03 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:04 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:05 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:06 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:07 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:08 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:09 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:10 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:11 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:12 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:13 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:14 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:15 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:16 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:17 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:18 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:19 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:20 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:21 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:22 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:23 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:24 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:25 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:26 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:27 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:28 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:29 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:30 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:31 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:32 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:33 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:34 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:35 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:36 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:37 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:38 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:39 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:40 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:41 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:42 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:43 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:44 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:45 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:46 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:47 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:48 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:49 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:50 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:51 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:52 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:53 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:54 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:55 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:56 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:57 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:58 :     549356,  549356000, 11536476000,     0
+2019-01-16 21:59 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:00 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:01 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:02 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:03 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:04 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:05 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:06 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:07 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:08 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:09 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:10 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:11 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:12 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:13 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:14 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:15 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:16 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:17 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:18 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:19 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:20 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:21 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:22 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:23 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:24 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:25 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:26 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:27 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:28 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:29 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:30 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:31 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:32 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:33 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:34 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:35 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:36 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:37 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:38 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:39 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:40 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:41 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:42 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:43 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:44 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:45 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:46 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:47 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:48 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:49 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:50 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:51 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:52 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:53 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:54 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:55 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:56 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:57 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:58 :     549356,  549356000, 11536476000,     0
+2019-01-16 22:59 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:00 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:01 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:02 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:03 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:04 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:05 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:06 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:07 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:08 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:09 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:10 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:11 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:12 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:13 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:14 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:15 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:16 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:17 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:18 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:19 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:20 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:21 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:22 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:23 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:24 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:25 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:26 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:27 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:28 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:29 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:30 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:31 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:32 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:33 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:34 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:35 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:36 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:37 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:38 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:39 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:40 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:41 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:42 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:43 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:44 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:45 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:46 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:47 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:48 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:49 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:50 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:51 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:52 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:53 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:54 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:55 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:56 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:57 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:58 :     549356,  549356000, 11536476000,     0
+2019-01-16 23:59 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:00 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:01 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:02 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:03 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:04 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:05 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:06 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:07 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:08 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:09 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:10 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:11 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:12 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:13 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:14 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:15 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:16 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:17 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:18 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:19 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:20 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:21 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:22 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:23 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:24 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:25 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:26 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:27 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:28 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:29 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:30 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:31 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:32 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:33 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:34 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:35 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:36 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:37 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:38 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:39 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:40 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:41 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:42 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:43 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:44 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:45 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:46 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:47 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:48 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:49 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:50 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:51 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:52 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:53 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:54 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:55 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:56 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:57 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:58 :     549356,  549356000, 11536476000,     0
+2019-01-17 00:59 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:00 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:01 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:02 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:03 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:04 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:05 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:06 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:07 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:08 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:09 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:10 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:11 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:12 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:13 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:14 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:15 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:16 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:17 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:18 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:19 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:20 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:21 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:22 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:23 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:24 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:25 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:26 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:27 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:28 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:29 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:30 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:31 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:32 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:33 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:34 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:35 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:36 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:37 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:38 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:39 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:40 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:41 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:42 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:43 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:44 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:45 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:46 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:47 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:48 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:49 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:50 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:51 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:52 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:53 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:54 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:55 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:56 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:57 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:58 :     549356,  549356000, 11536476000,     0
+2019-01-17 01:59 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:00 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:01 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:02 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:03 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:04 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:05 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:06 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:07 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:08 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:09 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:10 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:11 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:12 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:13 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:14 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:15 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:16 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:17 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:18 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:19 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:20 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:21 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:22 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:23 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:24 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:25 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:26 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:27 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:28 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:29 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:30 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:31 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:32 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:33 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:34 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:35 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:36 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:37 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:38 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:39 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:40 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:41 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:42 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:43 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:44 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:45 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:46 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:47 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:48 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:49 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:50 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:51 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:52 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:53 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:54 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:55 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:56 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:57 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:58 :     549356,  549356000, 11536476000,     0
+2019-01-17 02:59 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:00 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:01 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:02 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:03 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:04 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:05 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:06 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:07 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:08 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:09 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:10 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:11 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:12 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:13 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:14 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:15 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:16 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:17 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:18 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:19 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:20 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:21 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:22 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:23 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:24 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:25 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:26 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:27 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:28 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:29 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:30 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:31 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:32 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:33 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:34 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:35 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:36 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:37 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:38 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:39 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:40 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:41 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:42 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:43 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:44 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:45 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:46 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:47 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:48 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:49 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:50 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:51 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:52 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:53 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:54 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:55 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:56 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:57 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:58 :     549356,  549356000, 11536476000,     0
+2019-01-17 03:59 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:00 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:01 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:02 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:03 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:04 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:05 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:06 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:07 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:08 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:09 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:10 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:11 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:12 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:13 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:14 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:15 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:16 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:17 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:18 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:19 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:20 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:21 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:22 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:23 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:24 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:25 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:26 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:27 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:28 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:29 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:30 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:31 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:32 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:33 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:34 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:35 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:36 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:37 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:38 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:39 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:40 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:41 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:42 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:43 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:44 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:45 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:46 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:47 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:48 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:49 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:50 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:51 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:52 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:53 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:54 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:55 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:56 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:57 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:58 :     549356,  549356000, 11536476000,     0
+2019-01-17 04:59 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:00 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:01 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:02 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:03 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:04 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:05 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:06 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:07 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:08 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:09 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:10 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:11 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:12 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:13 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:14 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:15 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:16 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:17 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:18 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:19 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:20 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:21 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:22 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:23 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:24 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:25 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:26 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:27 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:28 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:29 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:30 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:31 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:32 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:33 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:34 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:35 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:36 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:37 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:38 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:39 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:40 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:41 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:42 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:43 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:44 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:45 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:46 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:47 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:48 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:49 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:50 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:51 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:52 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:53 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:54 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:55 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:56 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:57 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:58 :     549356,  549356000, 11536476000,     0
+2019-01-17 05:59 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:00 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:01 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:02 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:03 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:04 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:05 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:06 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:07 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:08 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:09 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:10 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:11 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:12 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:13 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:14 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:15 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:16 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:17 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:18 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:19 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:20 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:21 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:22 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:23 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:24 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:25 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:26 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:27 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:28 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:29 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:30 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:31 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:32 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:33 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:34 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:35 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:36 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:37 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:38 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:39 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:40 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:41 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:42 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:43 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:44 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:45 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:46 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:47 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:48 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:49 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:50 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:51 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:52 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:53 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:54 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:55 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:56 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:57 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:58 :     549356,  549356000, 11536476000,     0
+2019-01-17 06:59 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:00 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:01 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:02 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:03 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:04 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:05 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:06 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:07 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:08 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:09 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:10 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:11 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:12 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:13 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:14 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:15 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:16 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:17 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:18 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:19 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:20 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:21 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:22 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:23 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:24 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:25 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:26 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:27 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:28 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:29 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:30 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:31 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:32 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:33 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:34 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:35 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:36 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:37 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:38 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:39 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:40 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:41 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:42 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:43 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:44 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:45 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:46 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:47 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:48 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:49 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:50 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:51 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:52 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:53 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:54 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:55 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:56 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:57 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:58 :     549356,  549356000, 11536476000,     0
+2019-01-17 07:59 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:00 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:01 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:02 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:03 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:04 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:05 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:06 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:07 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:08 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:09 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:10 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:11 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:12 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:13 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:14 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:15 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:16 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:17 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:18 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:19 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:20 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:21 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:22 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:23 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:24 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:25 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:26 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:27 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:28 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:29 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:30 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:31 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:32 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:33 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:34 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:35 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:36 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:37 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:38 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:39 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:40 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:41 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:42 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:43 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:44 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:45 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:46 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:47 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:48 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:49 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:50 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:51 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:52 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:53 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:54 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:55 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:56 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:57 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:58 :     549356,  549356000, 11536476000,     0
+2019-01-17 08:59 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:00 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:01 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:02 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:03 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:04 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:05 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:06 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:07 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:08 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:09 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:10 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:11 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:12 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:13 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:14 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:15 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:16 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:17 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:18 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:19 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:20 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:21 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:22 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:23 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:24 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:25 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:26 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:27 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:28 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:29 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:30 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:31 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:32 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:33 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:34 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:35 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:36 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:37 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:38 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:39 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:40 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:41 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:42 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:43 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:44 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:45 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:46 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:47 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:48 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:49 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:50 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:51 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:52 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:53 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:54 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:55 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:56 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:57 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:58 :     549356,  549356000, 11536476000,     0
+2019-01-17 09:59 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:00 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:01 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:02 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:03 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:04 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:05 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:06 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:07 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:08 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:09 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:10 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:11 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:12 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:13 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:14 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:15 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:16 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:17 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:18 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:19 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:20 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:21 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:22 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:23 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:24 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:25 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:26 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:27 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:28 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:29 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:30 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:31 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:32 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:33 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:34 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:35 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:36 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:37 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:38 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:39 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:40 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:41 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:42 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:43 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:44 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:45 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:46 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:47 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:48 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:49 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:50 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:51 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:52 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:53 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:54 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:55 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:56 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:57 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:58 :     549356,  549356000, 11536476000,     0
+2019-01-17 10:59 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:00 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:01 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:02 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:03 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:04 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:05 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:06 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:07 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:08 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:09 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:10 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:11 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:12 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:13 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:14 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:15 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:16 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:17 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:18 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:19 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:20 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:21 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:22 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:23 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:24 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:25 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:26 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:27 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:28 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:29 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:30 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:31 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:32 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:33 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:34 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:35 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:36 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:37 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:38 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:39 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:40 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:41 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:42 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:43 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:44 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:45 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:46 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:47 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:48 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:49 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:50 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:51 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:52 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:53 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:54 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:55 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:56 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:57 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:58 :     549356,  549356000, 11536476000,     0
+2019-01-17 11:59 :     549356,  549356000, 11536476000,     0
+2019-01-17 12:00 :     549356,  549356000, 11536476000,     0
+2019-01-17 12:01 :     549356,  549356000, 11536476000,     0
+2019-01-17 12:02 :     549356,  549356000, 11536476000,     0
+2019-01-17 12:03 :     549356,  549356000, 11536476000,     0
+2019-01-17 12:04 :     549356,  549356000, 11536476000,     0
+2019-01-17 12:05 :     549356,  549356000, 11536476000,     0
+2019-01-17 12:06 :     549356,  549356000, 11536476000,     0
+2019-01-17 12:07 :     549356,  549356000, 11536476000,     0
+2019-01-17 12:08 :     549356,  549356000, 11536476000,     0
+2019-01-17 12:09 :     549356,  549356000, 11536476000,     0
+2019-01-17 12:10 :     549356,  549356000, 11536476000,     0
+2019-01-17 12:11 :     549356,  549356000, 11536476000,     0
+2019-01-17 12:12 :     549356,  549356000, 11536476000,     0
+2019-01-17 12:13 :     549356,  549356000, 11536476000,     0
+2019-01-17 12:14 :     549356,  549356000, 11536476000,     0
+2019-01-17 12:15 :     549356,  549356000, 11536476000,     0
+2019-01-17 12:16 :     549356,  549356000, 11536476000,     0
+2019-01-17 12:17 :     549356,  549356000, 11536476000,     0
+2019-01-17 12:18 :     549357,  549357000, 11536497000,     0
+2019-01-17 12:19 :     549359,  549359000, 11536539000,     0
+2019-01-17 12:20 :     549359,  549359000, 11536539000,     0
+2019-01-17 12:21 :     549359,  549359000, 11536539000,     0
+2019-01-17 12:22 :     549359,  549359000, 11536539000,     0
+2019-01-17 12:23 :     549359,  549359000, 11536539000,     0
+2019-01-17 12:24 :     549362,  549362000, 11536602000,     0
+2019-01-17 12:25 :     549372,  549372000, 11536812000,     0
+2019-01-17 12:26 :     549386,  549386000, 11537106000,     0
+2019-01-17 12:27 :     549394,  549394000, 11537274000,     0
+2019-01-17 12:28 :     549402,  549402000, 11537442000,     0
+2019-01-17 12:29 :     549414,  549414000, 11537694000,     0
+2019-01-17 12:30 :     549430,  549430000, 11538030000,     0
+2019-01-17 12:31 :     549441,  549441000, 11538261000,     0
+2019-01-17 12:32 :     549453,  549453000, 11538513000,     0
+2019-01-17 12:33 :     549462,  549462000, 11538702000,     0
+2019-01-17 12:34 :     549472,  549472000, 11538912000,     0
+2019-01-17 12:35 :     549485,  549485000, 11539185000,     0
+2019-01-17 12:36 :     549504,  549504000, 11539584000,     0
 2019-01-17 12:37 : empty slot
 2019-01-17 12:38 : empty slot
 2019-01-17 12:39 : empty slot

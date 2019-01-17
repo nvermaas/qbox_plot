@@ -1,0 +1,6 @@
+--filename=data\2421.txt
+--output_html=gas_per_uur_vandaag.html
+--title=Gas per uur = Vandaag
+--mode=today
+--interval=hour
+--type=scatter

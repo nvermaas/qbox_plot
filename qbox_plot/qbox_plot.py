@@ -1,9 +1,22 @@
 """
     File name: qbx_plot.py
     version: 1.0.0 (16 jan 2019)
-    Author: Nico Vermaas (nvermaas@xs4all.nl)
+    Author: Copyright (C) 2019 - Nico Vermaas (nvermaas@xs4all.nl)
     Date created: 2019-01-13
     Description: Plot converted QboxNext datafiles.
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
 import os
@@ -15,8 +28,36 @@ import plotly
 import argparse
 import plotly.graph_objs as go
 
-
 TIME_FORMAT = "%Y-%m-%d %H:%M"
+
+#--- common functions ---
+
+def find_last_in_list(list, value):
+    pos = max(loc for loc, val in enumerate(list) if val == value)
+    return pos
+
+
+def scp_filename(host, source, target):
+    """ scp a file from a remote location to a local dir
+        location: directory on the node where the source file is, and where the target file will be copied.
+        from_name: file to copy
+        to_name : the new file.
+    """
+    print('scp '+host+':/' + source+ ' to ' + target)
+    cmd = 'scp ' + host + ':' + source + ' ' + target
+    os.system(cmd)
+
+
+def execute_remote_command(host, cmd):
+    """ Run command on an ARTS node. Assumes ssh keys have been set up
+        cmd: command to run
+    """
+    ssh_cmd = "ssh {} \"{}\"".format(host, cmd)
+    print("Executing '{}'".format(ssh_cmd))
+    return os.system(ssh_cmd)
+
+# --- plot functions  ---
+
 def do_electricity_plots(title, xxx,yyy, legends, type, output_html,y_axis_title='verbruik'):
     """
 
@@ -25,7 +66,7 @@ def do_electricity_plots(title, xxx,yyy, legends, type, output_html,y_axis_title
     :param y: dict with data for y_axix (usage)
     :return:
     """
-    print('do_plots()')
+    print('do_electricity_plots()')
 
     bar_totals = go.Bar(
         x=xxx[2],
@@ -92,7 +133,7 @@ def do_plot(title, x,y, type, output_html,y_axis_title='verbruik'):
             title = title,
             xaxis=dict(
                 tickangle=-45,
-                tickvals=x
+                #tickvals=x
             ),
             yaxis=dict(
                 title=y_axis_title,
@@ -119,37 +160,11 @@ def do_plot(title, x,y, type, output_html,y_axis_title='verbruik'):
 
     data = [trace]
 
-    #layout = go.Layout(title=title, plot_bgcolor='rgb(255, 230,230)')
     fig = go.Figure(data=data, layout=layout)
-
     plotly.offline.plot(fig,filename=output_html)
-    # plotly.offline.plot({"data": data, "layout": layout}, auto_open=True)
 
 
-def find_last_in_list(list, value):
-    pos = max(loc for loc, val in enumerate(list) if val == value)
-    return pos
-
-
-def scp_filename(host, source, target):
-    """ scp a file from a remote location to a local dir
-        location: directory on the node where the source file is, and where the target file will be copied.
-        from_name: file to copy
-        to_name : the new file.
-    """
-    print('scp '+host+':/' + source+ ' to ' + target)
-    cmd = 'scp ' + host + ':' + source + ' ' + target
-    os.system(cmd)
-
-
-def execute_remote_command(host, cmd):
-    """ Run command on an ARTS node. Assumes ssh keys have been set up
-        cmd: command to run
-    """
-    ssh_cmd = "ssh {} \"{}\"".format(host, cmd)
-    print("Executing '{}'".format(ssh_cmd))
-    return os.system(ssh_cmd)
-
+# --- data handling functions  ---
 
 def sum_datasets(xx, yy, negate=False):
     """
@@ -272,6 +287,7 @@ def condense(x,y, interval):
 
     return condensed_x, condensed_y
 
+# --- IO functions  ---
 
 def parse_txt_file(filename, starttime, endtime):
     """
@@ -315,7 +331,87 @@ def parse_txt_file(filename, starttime, endtime):
                 pass
     return x,y
 
-# ------------------------------------------------------
+# --- presentation functions ---
+def do_single_plot_presentation(args, starttime, endtime):
+    if args.remote_host != None:
+        # copy the files from a remote location.
+        source = os.path.join(args.remote_dir, args.filename)
+        target = os.path.join(args.local_dir, args.filename)
+        scp_filename(args.remote_host, source, target)
+
+    # get the data from a text file. The textfile must be in the format that QboxNext.DumpQbx delivers it.
+    x, y = parse_txt_file(os.path.join(args.local_dir, args.filename), starttime, endtime)
+
+    # condense and stack the data based on the given interval (hour, day, week, month, year)
+    x, y = condense(x, y, args.interval)
+
+    # use plotly to make a html page with a plot
+    do_plot(args.title, x, y, args.type, args.output_html, args.y_axis_title)
+
+
+def do_electricity_presentation(args, starttime, endtime):
+    # multiple files
+    # assume: consumption1, consumption2, redelivery1,redelivery2
+    xxx = []
+    yyy = []
+
+    if args.consumption_files != None:
+        xx = []
+        yy = []
+        filenames = args.consumption_files.split(',')
+        for filename in filenames:
+
+            if args.remote_host != None:
+                # copy the files from a remote location.
+                source = os.path.join(args.remote_dir, filename)
+                target = os.path.join(args.local_dir, filename)
+                scp_filename(args.remote_host, source, target)
+
+            x, y = parse_txt_file(os.path.join(args.local_dir, filename), starttime, endtime)
+            x, y = condense(x, y, args.interval)
+
+            xx.append(x)
+            yy.append(y)
+
+        x_summed, y_summed = sum_datasets(xx, yy)
+
+        xxx.append(x_summed)
+        yyy.append(y_summed)
+
+    if args.redelivery_files != None:
+        xx = []
+        yy = []
+        filenames = args.redelivery_files.split(',')
+
+        for filename in filenames:
+
+            if args.remote_host != None:
+                # copy the files from a remote location.
+                source = os.path.join(args.remote_dir, filename)
+                target = os.path.join(args.local_dir, filename)
+                scp_filename(args.remote_host, source, target)
+
+            x, y = parse_txt_file(os.path.join(args.local_dir, filename), starttime, endtime)
+            x, y = condense(x, y, args.interval)
+
+            xx.append(x)
+            yy.append(y)
+            # datasets.append(dataset)
+
+        x_summed, y_summed = sum_datasets(xx, yy, negate=True)
+
+        xxx.append(x_summed)
+        yyy.append(y_summed)
+
+
+    # create the cumulative list
+    x_total, y_total = sum_datasets(xxx, yyy)
+    xxx.append(x_total)
+    yyy.append(y_total)
+    legends = args.legends.split(",")
+
+    # use plotly to make a html page with a plot
+    do_electricity_plots(args.title, xxx, yyy, legends, args.type, args.output_html, args.y_axis_title)
 
 def get_arguments(parser):
     """
@@ -425,10 +521,11 @@ def main():
     # --------------------------------------------------------------------------------------------------------
     if (args.version):
         print('--- qbx_plot.py - version 1.0.0 - 16 jan 2019 ---')
+        print('Copyright (C) 2019 - Nico Vermaas. This program comes with ABSOLUTELY NO WARRANTY;')
         return
 
     print('--- qbx_plot.py - version 1.0.0 - 16 jan 2019 ---')
-
+    print('Copyright (C) 2019 - Nico Vermaas. This program comes with ABSOLUTELY NO WARRANTY;')
     if args.starttime != None:
         starttime = datetime.datetime.strptime(args.starttime, TIME_FORMAT)
 
@@ -445,90 +542,18 @@ def main():
        starttime = starttime.replace(hour=0, minute=0)
        endtime = datetime.datetime.now()
 
-    # get the data from a text file. The textfile must be in the format that QboxNext.DumpQbx delivers it.
-    filename = args.filename
-    consumption_files = args.consumption_files
-    redelivery_files = args.redelivery_files
 
     if args.remote_pre_command != None:
         execute_remote_command(args.remote_host, args.remote_pre_command)
 
     # for a single file
-    if filename!=None:
+    if args.filename!=None:
+        do_single_plot_presentation(args, starttime, endtime)
 
-        if args.remote_host != None:
-            # copy the files from a remote location.
-            source = os.path.join(args.remote_dir, filename)
-            target = os.path.join(args.local_dir, filename)
-            scp_filename(args.remote_host, source, target)
 
-        x,y = parse_txt_file(os.path.join(args.local_dir, filename), starttime, endtime)
+    if args.consumption_files != None:
+        do_electricity_presentation(args, starttime, endtime)
 
-        # condense and stack the data based on the given interval (hour, day, week, month, year)
-        x,y = condense(x,y,args.interval)
-
-        do_plot(args.title,x,y, args.type, args.output_html, args.y_axis_title)
-
-    # multiple files
-    # assume: consumption1, consumption2, redelivery1,redelivery2
-    xxx = []
-    yyy = []
-
-    if consumption_files!=None:
-        xx = []
-        yy = []
-        filenames = args.consumption_files.split(',')
-        for filename in filenames:
-
-            if args.remote_host != None:
-                # copy the files from a remote location.
-                source = os.path.join(args.remote_dir, filename)
-                target = os.path.join(args.local_dir, filename)
-                scp_filename(args.remote_host, source, target)
-
-            x, y = parse_txt_file(os.path.join(args.local_dir, filename), starttime, endtime)
-            x, y = condense(x, y, args.interval)
-
-            xx.append(x)
-            yy.append(y)
-
-        x_summed, y_summed = sum_datasets(xx,yy)
-
-        xxx.append(x_summed)
-        yyy.append(y_summed)
-
-    if redelivery_files != None:
-        xx = []
-        yy = []
-        filenames = args.redelivery_files.split(',')
-
-        for filename in filenames:
-
-            if args.remote_host != None:
-                # copy the files from a remote location.
-                source = os.path.join(args.remote_dir, filename)
-                target = os.path.join(args.local_dir, filename)
-                scp_filename(args.remote_host, source, target)
-
-            x, y = parse_txt_file(os.path.join(args.local_dir, filename), starttime, endtime)
-            x, y = condense(x, y, args.interval)
-
-            xx.append(x)
-            yy.append(y)
-            # datasets.append(dataset)
-
-        x_summed, y_summed = sum_datasets(xx, yy, negate=True)
-
-        xxx.append(x_summed)
-        yyy.append(y_summed)
-
-    if args.consumption_files!=None:
-        # create the cumulative list
-        x_total, y_total = sum_datasets(xxx,yyy)
-        xxx.append(x_total)
-        yyy.append(y_total)
-        legends = args.legends.split(",")
-        do_electricity_plots(args.title, xxx, yyy, legends, args.type, args.output_html, args.y_axis_title)
 
     if args.remote_post_command != None:
         execute_remote_command(args.remote_host, args.remote_post_command)
