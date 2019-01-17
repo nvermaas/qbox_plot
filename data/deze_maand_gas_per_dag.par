@@ -1,0 +1,5 @@
+--filename=data\2421.txt
+--output_html=gas_per_uur_maand.html
+--title=Gas per dag - Deze Maand
+--mode=this_month
+--interval=day

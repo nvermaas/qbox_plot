@@ -246,12 +246,6 @@ def condense(x,y, interval):
         timestamp = x[i]
         value = y[i]
 
-        # check if the 'next' condition is reached based on the interval
-        if interval=='today':
-           # check if the timestamp is still on the same day as the prev_timestamp
-           if timestamp.day == prev_timestamp.day:
-                next = True
-
         if interval == 'minute':
             if timestamp.minute != prev_timestamp.minute:
                 next = True
@@ -487,10 +481,10 @@ def main():
                         help="Format like 2019-01-12 00:00")
     parser.add_argument("--mode",
                         default=None,
-                        help="Default modes. Possible options: today, this_week, this_month")
+                        help="Default modes. Possible options: today, this_week, this_month, this_year")
     parser.add_argument("--interval",
                         default="day",
-                        help="Shows bars per interval. Possible options: today, hour, day, week, month, year")
+                        help="Shows bars per interval. Possible options: minute, hour, day, month")
     # plot parameters
     parser.add_argument("--title",
                         default="Title",
@@ -538,10 +532,18 @@ def main():
     # some default modes
     # today
     if args.mode=='today':
-       starttime = datetime.datetime.now()
-       starttime = starttime.replace(hour=0, minute=0)
-       endtime = datetime.datetime.now()
+        endtime = datetime.datetime.now()
+        starttime = endtime.replace(hour=0, minute=0)
 
+    # this_month
+    if args.mode=='this_month':
+        endtime = datetime.datetime.now()
+        starttime = endtime.replace(day=1, hour=0, minute=0)
+
+    # this_year
+    if args.mode=='this_year':
+        endtime = datetime.datetime.now()
+        starttime = endtime.replace(month=1,day=1, hour=0, minute=0)
 
     if args.remote_pre_command != None:
         execute_remote_command(args.remote_host, args.remote_pre_command)
