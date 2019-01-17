@@ -118,10 +118,9 @@ cd /var/qboxnextdata/Qbox_15-49-002-081
 --remote_pre_command=/var/qboxnextdata/Qbox_15-49-002-081/dump_stroom.sh
 --local_dir=data
 --legends=verbruik,teruglevering,netto
+--mode=today
 --output_html=/www/stroom.html
---title=Stroom per uur - Januari 2019
---starttime=2019-01-16 00:00
---endtime=2019-01-17 01:00
+--title=Stroom per uur - Vandaag
 --interval=hour
 --y_axis_title=verbruik in Wh
 ```
@@ -149,3 +148,9 @@ Het resultaat is deze web pagina die om de 10 minuten kan worden ververst. (de p
 <p align="center">
   <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/www_stroom_plot.jpg"/>
 </p>
+
+
+### Lijst met veranderingen
+
+
+## versie 1.0.0 (16 jan 2019)

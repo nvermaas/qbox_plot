@@ -389,6 +389,9 @@ def main():
     parser.add_argument("--endtime",
                         default=None,
                         help="Format like 2019-01-12 00:00")
+    parser.add_argument("--mode",
+                        default=None,
+                        help="Default modes. Possible options: today, this_week, this_month")
     parser.add_argument("--interval",
                         default="day",
                         help="Shows bars per interval. Possible options: today, hour, day, week, month, year")
@@ -426,11 +429,23 @@ def main():
 
     print('--- qbx_plot.py - version 1.0.0 - 16 jan 2019 ---')
 
+    if args.starttime != None:
+        starttime = datetime.datetime.strptime(args.starttime, TIME_FORMAT)
+
+    # if no endtime is specified, then the endtime is now
+    if args.endtime != None:
+        endtime = datetime.datetime.strptime(args.endtime, TIME_FORMAT)
+    else:
+        endtime = datetime.datetime.now()
+
+    # some default modes
+    # today
+    if args.mode=='today':
+       starttime = datetime.datetime.now()
+       starttime = starttime.replace(hour=0, minute=0)
+       endtime = datetime.datetime.now()
 
     # get the data from a text file. The textfile must be in the format that QboxNext.DumpQbx delivers it.
-    starttime = datetime.datetime.strptime(args.starttime, TIME_FORMAT)
-    endtime = datetime.datetime.strptime(args.endtime, TIME_FORMAT)
-
     filename = args.filename
     consumption_files = args.consumption_files
     redelivery_files = args.redelivery_files
