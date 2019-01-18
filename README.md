@@ -88,13 +88,23 @@ bijvoorbeeld een scp commando om die data files te kopieren.
 
 Dit maakt het mogelijk om 'qbox_plot' op een webserver te draaien, 
 waarbij hij eerst de QboxNext software de Raspberry Pi opdracht geeft om de data te exporteren naar de gewenste txt bestanden 
-alvorens ze te downloaden en te visualiseren.
+alvorens ze te downloaden en te visualiseren. Dit gaat het er wel van uit dat de Qserver en DumpQbx applicaties al zijn geinstalleerd op de Raspberry Pi.
 
-Dit gaat het vanuit dat de Qserver en DumpQbx applicaties al zijn geinstalleerd op de Raspberry Pi.
-
+### SSH keys
+Om een 'scp' commando uit te voeren moet de webserver met ssh kunnen inloggen op de PI. Het handigste is om dat via 'key forwarding' te doen.
+Dat kan met de volgende twee commando's (waarbij het IP adres de locatie van je Raspberry Pi in je eigen netwerk is):
+```
+ > Op de webserver    : ssh-keygen -t rsa
+ > op de Raspberry Pi : ssh-copy-id pi@192.168.?.?
+ ```
+ 
+Voor meer informatie about key forwarding: https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2 
+ 
 <p align="center">
   <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/qbox_plot_as_frontend.jpg"/>
 </p>
+
+### De scripts
 
 'dump_stroom.sh' is een shell script dat de DumpQbx applicatie start voor elk 'kanaal' zodat de txt bestanden worden gegenereerd.
 Dit script kan met de hand worden uitgevoerd, maar ook automatisch door 'qbox_plot' met het commando dat met de '--remote_pre_command' wordt meegegeven. (zie de parameter file)
@@ -150,7 +160,6 @@ Het resultaat is deze web pagina die om de 10 minuten kan worden ververst. (de p
 </p>
 
 
-### Lijst met veranderingen
+## Changelist
 
-
-## versie 1.0.0 (16 jan 2019)
+### versie 1.0.0 (16 jan 2019)
