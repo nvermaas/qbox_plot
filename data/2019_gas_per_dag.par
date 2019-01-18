@@ -4,3 +4,4 @@
 --starttime=2019-01-01 00:00
 --endtime=2019-12-31 00:00
 --interval=day
+--gas_price

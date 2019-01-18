@@ -109,7 +109,7 @@ Voor meer informatie about key forwarding: https://www.digitalocean.com/communit
 'dump_stroom.sh' is een shell script dat de DumpQbx applicatie start voor elk 'kanaal' zodat de txt bestanden worden gegenereerd.
 Dit script kan met de hand worden uitgevoerd, maar ook automatisch door 'qbox_plot' met het commando dat met de '--remote_pre_command' wordt meegegeven. (zie de parameter file)
 
-'dump_stroom.sh':
+``dump_stroom.sh``:
 ```
 cd /var/qboxnextdata/Qbox_15-49-002-081 
 ./dumpqbx --qbx=/var/qboxnextdata/Qbox_15-49-002-081/15-49-002-081_00000181.qbx --values > 181.txt
@@ -118,7 +118,7 @@ cd /var/qboxnextdata/Qbox_15-49-002-081
 ./dumpqbx --qbx=/var/qboxnextdata/Qbox_15-49-002-081/15-49-002-081_00000282.qbx --values > 282.txt
 ```
 
-'stroom.par' (parameter file)
+``stroom.par`` (parameter file)
 ```
 --filename=181.txt
 --consumption_files=181.txt,182.txt
@@ -135,7 +135,7 @@ cd /var/qboxnextdata/Qbox_15-49-002-081
 --y_axis_title=verbruik in Wh
 ```
 
-'reload_qbx.sh':
+``1reload_qbx.sh``:
 
 Dit script start de `qbox_plot' applicatie elke 600 seconden (10 minuten). 
 Dit voorbeeld laat zien dat er meerdere presentaties tegelijk kunnen worden gemaakt.
@@ -159,6 +159,55 @@ Het resultaat is deze web pagina die om de 10 minuten kan worden ververst. (de p
   <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/www_stroom_plot.jpg"/>
 </p>
 
+### Combinatie pagina
+Met de bovenstaande methode kunnen verschillende html pagina's worden gegenereerd, die alsvolgt kunnen worden samengevoegd in een overzichtspagine.
+Waarbij 'localhost' ook een IP adres of een web domein kan zijn.
+
+``qbox.html``
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="refresh" content="300">
+    <meta charset="UTF-8">
+    <title>Qbox - Live Energy Monitor</title>
+</head>
+<body>
+<table>
+<tr>
+    <td>
+    <div>
+        <iframe src="http://localhost/qbox/gas.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" width="700" height="400"></iframe>
+    </div>
+    </td>
+    <td>
+    <div>
+        <iframe src="http://localhost/qbox/stroom.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" width="700" height="400"></iframe>
+    </div>
+    </td>
+</tr>
+<tr>
+    <td>
+    <div>
+        <iframe src="http://localhost/qbox/gas_month.html" name="Gas deze maand" allowTransparency="true" scrolling="no" frameborder="0" width="700" height="400"></iframe>
+    </div>
+    </td>
+    <td>
+
+    <div>
+        <iframe src="http://localhost/qbox/stroom_month.html" name="Stroom deze maand" allowTransparency="true" scrolling="no" frameborder="0" width="700" height="400"></iframe>
+    </div>
+    </td>
+</tr>
+</table>
+</body>
+</html>
+```
+
+<p align="center">
+  <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/qbox_gas_stroom.png"/>
+</p>
 
 ## Changelist
 
