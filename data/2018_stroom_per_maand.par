@@ -1,7 +1,8 @@
---consumption_files=data\qbx2018_181.txt,data\qbx2018_182.txt
---redelivery_files=data\qbx2018_182.txt,data\qbx2018_282.txt
+--consumption_files=qbx2018_181.txt,qbx2018_182.txt
+--redelivery_files=qbx2018_281.txt,qbx2018_282.txt
+--local_dir=data
 --output_html=2018_stroom_per_maand.html
---title=2018 - Stroom per maand
+--title=2018 - Stroom per maand - textfiles
 --starttime=2018-01-01 00:00
 --endtime=2018-12-31 00:00
 --interval=month

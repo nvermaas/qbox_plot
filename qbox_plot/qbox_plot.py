@@ -32,6 +32,17 @@ import plotly.graph_objs as go
 TIME_FORMAT = "%Y-%m-%d %H:%M"
 
 #--- common functions ---
+def weeknumber_to_date(starttime, week):
+    """
+    Convert weeknumber to a human readable date
+    :param week: week number, 1..53
+    :return: date as string like '7 jan'
+    """
+
+    search_pattern = str(starttime.year)+'-W'+str(week)
+    timestamp = datetime.datetime.strptime(search_pattern + '-0', "%Y-W%W-%w").date()
+    date = datetime.datetime.strftime(timestamp, "%d %b")
+    return date
 
 def find_last_in_list(list, value):
     pos = max(loc for loc, val in enumerate(list) if val == value)
@@ -282,7 +293,20 @@ def condense(x,y, interval):
 
 
 # --- IO functions  ---
-def format_data_from_qbackend(args, my_data, dataset='gas'):
+def get_x_value(i, starttime, interval):
+    months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
+
+    if interval.upper() == 'MONTH':
+        x_value = months[i - 1]
+    elif interval.upper() == 'WEEK':
+        x_value = weeknumber_to_date(starttime, i)
+    else:
+        x_value = i
+
+
+    return x_value
+
+def format_data_from_qbackend(args, starttime, my_data, dataset='gas'):
 
     net_low_total = my_data.get('data')[0].get('total')
     net_low_data  = my_data.get('data')[0].get('data')
@@ -300,23 +324,24 @@ def format_data_from_qbackend(args, my_data, dataset='gas'):
     generation_data = my_data.get('data')[4].get('data')
 
     # interate through the data to find the usage per timestamp
-    # the interval is now implied by the timerange.
 
-    length = len(gas_data)
+    # there is still a bug in the qserver resolution,
+    # for gas it still calculates it own resolution instead of using the provided one.
+    # a work around is to provide the 'dataset' value in the paramters to indicate which
+    # dataset should be used for the interval.
+    if args.dataset=='gas':
+        length = len(gas_data)
+    else:
+        length = len(consumption_data)
+
     interval = args.interval
-    months=['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec']
     x = []      # timestamps
     y = []      # values per timestamp
 
-    for i in range(1, len(gas_data)+1):
+    for i in range(1, length+1):
 
         # x-axis
-        if interval.upper() == 'MONTH':
-            x.append(months[i-1])
-        elif interval.upper() =='DAY':
-            x.append(i)
-        else:
-            x.append(i)
+        x.append(get_x_value(i, starttime, interval))
 
         # y-axis
         if (dataset.upper()=='GAS'):
@@ -327,6 +352,7 @@ def format_data_from_qbackend(args, my_data, dataset='gas'):
             y.append(net_low_data[i-1]+net_high_data[i-1])
         elif (dataset.upper()=='GENERATION' or dataset.upper()=='REDELIVERY'):
             y.append(generation_data[i-1])
+
     return x,y
 
 
@@ -421,7 +447,7 @@ def do_single_plot_presentation(args, starttime, endtime):
     # when the backend API is used. But if you want, you can still do both and copy the ascii files also.
     if args.io_mode=='qbackend':
         data = get_data_from_qbackend(args, starttime, endtime)
-        x, y = format_data_from_qbackend(args, data, args.dataset)
+        x, y = format_data_from_qbackend(args, starttime, data, args.dataset)
     else:
         # get the data from a text file. The textfile must be in the format that QboxNext.DumpQbx delivers it.
         x, y = parse_txt_file(os.path.join(args.local_dir, args.filename), starttime, endtime)
@@ -440,17 +466,17 @@ def do_electricity_presentation_qbackend(args, starttime, endtime):
     data = get_data_from_qbackend(args, starttime, endtime)
 
     # consumption
-    x, y = format_data_from_qbackend(args, data, 'consumption')
+    x, y = format_data_from_qbackend(args, starttime, data, 'consumption')
     xx.append(x)
     yy.append(y)
 
     # generation
-    x, y = format_data_from_qbackend(args, data, 'generation')
+    x, y = format_data_from_qbackend(args, starttime,data, 'generation')
     xx.append(x)
     yy.append(y)
 
     # netto
-    x, y = format_data_from_qbackend(args, data, 'netto')
+    x, y = format_data_from_qbackend(args,starttime, data, 'netto')
     xx.append(x)
     yy.append(y)
 
