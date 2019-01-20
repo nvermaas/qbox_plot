@@ -210,5 +210,9 @@ Waarbij 'localhost' ook een IP adres of een web domein kan zijn.
 </p>
 
 ## Changelist
-
+### versie 1.1.0 (19 jan 2019)
+  * Link met qservice backend kan nu gemaakt worden door de '--qbackend' parameter te zetten. 
+    Hiervoor moet ook de '--qbox_sn' parameter worden gezet (type 'qbox_plot -h' voor meer details)
+  * '-- presentation' parameter om te kiezen tussen 'single' en 'electricity' plot
+  
 ### versie 1.0.0 (16 jan 2019)

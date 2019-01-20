@@ -2,8 +2,9 @@
 --redelivery_files=281.txt,282.txt
 --local_dir=data
 --legends=verbruik,teruglevering,netto
---output_html=vandaag_stroom_per_uur
+--output_html=vandaag_stroom_per_uur.html
 --title=Stroom per uur - Vandaag
 --mode=today
 --interval=hour
 --y_axis_title=verbruik in Wh
+

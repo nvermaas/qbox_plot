@@ -24,6 +24,7 @@ import sys
 import datetime
 
 import plotly
+import requests
 
 import argparse
 import plotly.graph_objs as go
@@ -58,9 +59,8 @@ def execute_remote_command(host, cmd):
 
 # --- plot functions  ---
 
-def do_electricity_plots(title, xxx,yyy, legends, type, output_html,y_axis_title='verbruik'):
+def do_electricity_plots(title, xx,yy, legends, type, output_html,y_axis_title='verbruik'):
     """
-
     :param title: Title of Plot
     :param x: dict with data for x-axis (time)
     :param y: dict with data for y_axix (usage)
@@ -68,26 +68,25 @@ def do_electricity_plots(title, xxx,yyy, legends, type, output_html,y_axis_title
     """
     print('do_electricity_plots()')
 
-    bar_totals = go.Bar(
-        x=xxx[2],
-        y=yyy[2],
-        marker=dict(
-            color='rgb(255,221,0)',
-        ),
-        name=legends[2]
-    )
-
     line_consumption = go.Scatter(
-        x=xxx[0],
-        y=yyy[0],
+        x=xx[0],
+        y=yy[0],
         mode='lines',
         name=legends[0]
     )
     line_redelivery = go.Scatter(
-        x=xxx[1],
-        y=yyy[1],
+        x=xx[1],
+        y=yy[1],
         mode='lines',
         name = legends[1]
+    )
+    bar_totals = go.Bar(
+        x=xx[2],
+        y=yy[2],
+        marker=dict(
+            color='rgb(255,221,0)',
+        ),
+        name=legends[2]
     )
 
     layout = go.Layout(
@@ -164,7 +163,7 @@ def do_plot(title, x,y, type, output_html,y_axis_title='verbruik'):
     plotly.offline.plot(fig,filename=output_html)
 
 
-# --- data handling functions  ---
+# --- data handling functions for io_mode = text ---
 
 def sum_datasets(xx, yy, negate=False):
     """
@@ -281,7 +280,90 @@ def condense(x,y, interval):
 
     return condensed_x, condensed_y
 
+
 # --- IO functions  ---
+def format_data_from_qbackend(args, my_data, dataset='gas'):
+
+    net_low_total = my_data.get('data')[0].get('total')
+    net_low_data  = my_data.get('data')[0].get('data')
+
+    consumption_total = my_data.get('data')[1].get('total')
+    consumption_data  = my_data.get('data')[1].get('data')
+
+    net_high_total = my_data.get('data')[2].get('total')
+    net_high_data  = my_data.get('data')[2].get('data')
+
+    gas_total = my_data.get('data')[3].get('total')
+    gas_data  = my_data.get('data')[3].get('data')
+
+    generation_total  = my_data.get('data')[4].get('total')
+    generation_data = my_data.get('data')[4].get('data')
+
+    # interate through the data to find the usage per timestamp
+    # the interval is now implied by the timerange.
+
+    length = len(gas_data)
+    interval = args.interval
+    months=['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec']
+    x = []      # timestamps
+    y = []      # values per timestamp
+
+    for i in range(1, len(gas_data)+1):
+
+        # x-axis
+        if interval.upper() == 'MONTH':
+            x.append(months[i-1])
+        elif interval.upper() =='DAY':
+            x.append(i)
+        else:
+            x.append(i)
+
+        # y-axis
+        if (dataset.upper()=='GAS'):
+            y.append(gas_data[i-1])
+        elif (dataset.upper()=='CONSUMPTION'):
+            y.append(consumption_data[i-1])
+        elif (dataset.upper()=='NETTO'):
+            y.append(net_low_data[i-1]+net_high_data[i-1])
+        elif (dataset.upper()=='GENERATION' or dataset.upper()=='REDELIVERY'):
+            y.append(generation_data[i-1])
+    return x,y
+
+
+def get_data_from_qbackend(args, starttime, endtime):
+    # http://192.168.178.62/api/getseries?sn=15-49-002-081&from=2018-12-01&to=2018-12-02
+
+    # the backend service does not accept times, so reformat the times
+    startdate = starttime.date()
+    enddate = endtime.date()
+    if startdate == enddate:
+        enddate = enddate + datetime.timedelta(days=1)
+
+    url = args.qbackend + '/?sn='+args.qbox_sn
+    url = url + '&from='+str(startdate)+'&to='+str(enddate)
+
+    # resolution
+    # OneMinute = 1,
+    # FiveMinutes = 5,
+    # Hour = 60,
+    # Day = 1440,
+    # Week = 10080,
+    # Month = 43800 // gemiddelde van 365 dagen
+
+    url = url + '&resolution='+args.interval
+
+    print("get_data_from_qbackend("+url+")")
+    print("timerange   : "+str(startdate)+" - "+str(enddate))
+    response = requests.get(url)
+
+    # Check for HTTP codes other than 200
+    if response.status_code != 200:
+        raise Exception("Error accessing API: " + response.status_code);
+
+    # Decode the JSON response into a dictionary and use the data
+    data = response.json()
+    return data
+
 
 def parse_txt_file(filename, starttime, endtime):
     """
@@ -289,7 +371,7 @@ def parse_txt_file(filename, starttime, endtime):
     :param filename:
     :return: x,y, dicts with values per timestamp
     """
-    print("parsing file: "+filename)
+    print("parse_txt_file: "+filename)
     print("timerange   : "+str(starttime)+" - "+str(endtime))
     # initialisation
     x = []
@@ -325,25 +407,66 @@ def parse_txt_file(filename, starttime, endtime):
                 pass
     return x,y
 
+
 # --- presentation functions ---
 def do_single_plot_presentation(args, starttime, endtime):
+
     if args.remote_host != None:
         # copy the files from a remote location.
         source = os.path.join(args.remote_dir, args.filename)
         target = os.path.join(args.local_dir, args.filename)
         scp_filename(args.remote_host, source, target)
 
-    # get the data from a text file. The textfile must be in the format that QboxNext.DumpQbx delivers it.
-    x, y = parse_txt_file(os.path.join(args.local_dir, args.filename), starttime, endtime)
+    # remote_host and qbackend should be mutually exclusive, because there is no need to copy the ascii files
+    # when the backend API is used. But if you want, you can still do both and copy the ascii files also.
+    if args.io_mode=='qbackend':
+        data = get_data_from_qbackend(args, starttime, endtime)
+        x, y = format_data_from_qbackend(args, data, args.dataset)
+    else:
+        # get the data from a text file. The textfile must be in the format that QboxNext.DumpQbx delivers it.
+        x, y = parse_txt_file(os.path.join(args.local_dir, args.filename), starttime, endtime)
 
-    # condense and stack the data based on the given interval (hour, day, week, month, year)
-    x, y = condense(x, y, args.interval)
+        # condense and stack the data based on the given interval (hour, day, week, month, year)
+        x, y = condense(x, y, args.interval)
 
     # use plotly to make a html page with a plot
     do_plot(args.title, x, y, args.type, args.output_html, args.y_axis_title)
 
 
-def do_electricity_presentation(args, starttime, endtime):
+def do_electricity_presentation_qbackend(args, starttime, endtime):
+    xx = []
+    yy = []
+
+    data = get_data_from_qbackend(args, starttime, endtime)
+
+    # consumption
+    x, y = format_data_from_qbackend(args, data, 'consumption')
+    xx.append(x)
+    yy.append(y)
+
+    # generation
+    x, y = format_data_from_qbackend(args, data, 'generation')
+    xx.append(x)
+    yy.append(y)
+
+    # netto
+    x, y = format_data_from_qbackend(args, data, 'netto')
+    xx.append(x)
+    yy.append(y)
+
+    # x_summed, y_summed = sum_datasets(xx, yy)
+
+    # create the cumulative list
+    # x_total, y_total = sum_datasets(xxx, yyy)
+
+
+    legends = args.legends.split(",")
+
+    # use plotly to make a html page with a plot
+    do_electricity_plots(args.title, xx, yy, legends, args.type, args.output_html, args.y_axis_title)
+
+
+def do_electricity_presentation_text(args, starttime, endtime):
     # multiple files
     # assume: consumption1, consumption2, redelivery1,redelivery2
     xxx = []
@@ -397,7 +520,6 @@ def do_electricity_presentation(args, starttime, endtime):
         xxx.append(x_summed)
         yyy.append(y_summed)
 
-
     # create the cumulative list
     x_total, y_total = sum_datasets(xxx, yyy)
     xxx.append(x_total)
@@ -406,6 +528,14 @@ def do_electricity_presentation(args, starttime, endtime):
 
     # use plotly to make a html page with a plot
     do_electricity_plots(args.title, xxx, yyy, legends, args.type, args.output_html, args.y_axis_title)
+
+
+def do_electricity_presentation(args, starttime, endtime):
+    if args.io_mode == 'qbackend':
+        do_electricity_presentation_qbackend(args, starttime, endtime)
+    else:
+        do_electricity_presentation_text(args, starttime, endtime)
+
 
 def get_arguments(parser):
     """
@@ -437,18 +567,29 @@ def main():
     parser = argparse.ArgumentParser(fromfile_prefix_chars='@')
 
     # general parameters
+    parser.add_argument("--qbox_sn",
+                        default="15-49-002-081",
+                        help="The qbox serial number is on the sticker on you qbox. It is needed to access the data in the qbackend")
+    # IO parameters
+    parser.add_argument("--io_mode",
+                        default=None,
+                        help="Communication mode. Possible options: local_text, remote_text, qbackend")
+
     parser.add_argument("--filename",
                         default=None,
-                        help="txt file to parse")
-    parser.add_argument("--filenames",
+                        help="txt file to parse (when txt file parsing is used)")
+    parser.add_argument("--dataset",
                         default=None,
-                        help="txt files to parse")
+                        help="dataset to parse (when qbackend is used). Possible options: gas, consumption, generation")
     parser.add_argument("--consumption_files",
                         default=None,
                         help="high and low peak electricity consumption files (181, 182)")
     parser.add_argument("--redelivery_files",
                         default=None,
                         help="high and low peak electricity redelivery files (281, 282)")
+    parser.add_argument("--qbackend",
+                        default=None,
+                        help="The url to the API that delivers the data in json format. For example: http://192.168.178.62/api/getseries")
     parser.add_argument("--remote_host",
                         default=None,
                         help="remote ssh/scp host where the files are stored (if None, then they are assumed to be local)")
@@ -464,14 +605,21 @@ def main():
     parser.add_argument("--local_dir",
                         default='',
                         help="local directory where the data files are stored or read")
+
+    # visualisation parameters
     parser.add_argument("--legends",
                         default="verbruik,teruglevering,totaal",
                         help="Legends for consumption, redelivery and totals.")
-    # general parameters
     parser.add_argument("--output_html",
                         default="qbx_plot.html",
                         help="output html file")
+    parser.add_argument("--presentation",
+                        default=None,
+                        help="Possible options: single, electricity")
 
+    parser.add_argument("--mode",
+                        default=None,
+                        help="Default modes. Possible options: today, this_week, this_month, this_year")
 
     parser.add_argument("--starttime",
                         default=None,
@@ -479,9 +627,6 @@ def main():
     parser.add_argument("--endtime",
                         default=None,
                         help="Format like 2019-01-12 00:00")
-    parser.add_argument("--mode",
-                        default=None,
-                        help="Default modes. Possible options: today, this_week, this_month, this_year")
     parser.add_argument("--interval",
                         default="day",
                         help="Shows bars per interval. Possible options: minute, hour, day, month")
@@ -492,14 +637,10 @@ def main():
     parser.add_argument("--y_axis_title",
                         default="Verbruik",
                         help="Title on the Y axis")
-
     parser.add_argument("--type",
                         default="bar",
                         help="Chart type. Possible options: bar, scatter")
-    parser.add_argument("--examples", "-e",
-                        default=False,
-                        help="Show some examples",
-                        action="store_true")
+
     # All parameters in a file
     parser.add_argument('--parfile',
                         nargs='?',
@@ -514,11 +655,11 @@ def main():
 
     # --------------------------------------------------------------------------------------------------------
     if (args.version):
-        print('--- qbx_plot.py - version 1.0.0 - 16 jan 2019 ---')
+        print('--- qbx_plot.py - version 1.1.0 - 19 jan 2019 ---')
         print('Copyright (C) 2019 - Nico Vermaas. This program comes with ABSOLUTELY NO WARRANTY;')
         return
 
-    print('--- qbx_plot.py - version 1.0.0 - 16 jan 2019 ---')
+    print('--- qbx_plot.py - version 1.1.0 - 19 jan 2019 ---')
     print('Copyright (C) 2019 - Nico Vermaas. This program comes with ABSOLUTELY NO WARRANTY;')
     if args.starttime != None:
         starttime = datetime.datetime.strptime(args.starttime, TIME_FORMAT)
@@ -548,13 +689,25 @@ def main():
     if args.remote_pre_command != None:
         execute_remote_command(args.remote_host, args.remote_pre_command)
 
-    # for a single file
-    if args.filename!=None:
-        do_single_plot_presentation(args, starttime, endtime)
+    # determine the type of presentation
+    presentation = args.presentation
+
+    # for backward compatibility with version 1.0,
+    # the presentation mode was interpreted from the definition of the datafiles
+    if presentation == None:
+        if args.consumption_files==None:
+            presentation="single"
+        else:
+            presentation="electricity"
 
 
-    if args.consumption_files != None:
-        do_electricity_presentation(args, starttime, endtime)
+    # for a single dataset
+    if presentation=="single":
+       do_single_plot_presentation(args, starttime, endtime)
+
+    # for a combined dataset
+    if presentation=="electricity":
+       do_electricity_presentation(args, starttime, endtime)
 
 
     if args.remote_post_command != None:
@@ -562,4 +715,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+        #try:
+        main()
+        #except Exception as error:
+        #    print(str(error))
+
