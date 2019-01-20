@@ -1,7 +1,7 @@
 # qbox_plot
 Dit is een Python programma dat QBox text bestanden in grafieken kan weergeven in een html pagina.
 
-De text bestanden kunnen worden gemaakt met het DumpQbx programma. Dat valt buiten de scope van qpbox_plot, die daarvoor:
+De text bestanden kunnen worden gemaakt met het DumpQbx programma. Dat valt buiten de scope van qpbox_plot, zie daarvoor:
 * https://bitbucket.org/qboxnext/dotnetcore-minimal/src/master/
 
 ## Vereisten
@@ -98,7 +98,7 @@ Dat kan met de volgende twee commando's (waarbij het IP adres de locatie van je 
  > op de Raspberry Pi : ssh-copy-id pi@192.168.?.?
  ```
  
-Voor meer informatie about key forwarding: https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2 
+Voor meer informatie over key forwarding: https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2 
  
 <p align="center">
   <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/qbox_plot_as_frontend.jpg"/>
@@ -135,7 +135,7 @@ cd /var/qboxnextdata/Qbox_15-49-002-081
 --y_axis_title=verbruik in Wh
 ```
 
-``1reload_qbx.sh``:
+``reload_qbx.sh``:
 
 Dit script start de `qbox_plot' applicatie elke 600 seconden (10 minuten). 
 Dit voorbeeld laat zien dat er meerdere presentaties tegelijk kunnen worden gemaakt.
@@ -152,7 +152,7 @@ do
 done
 ```
 
-De '--output_html=www/stroom.html' zorgt ervoor dat de html pagina op een plek terecht komt die door een webserver kan worden getoont.
+De '--output_html=www/stroom.html' zorgt ervoor dat de html pagina op een plek terecht komt die door een webserver kan worden getoond.
 Het resultaat is deze web pagina die om de 10 minuten kan worden ververst. (de pagina ververst niet automatisch, maar met F5 wordt hij opnieuw geladen met nieuwe gegevens)
 
 <p align="center">
