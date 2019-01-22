@@ -95,9 +95,9 @@ We are working towards the following situation:
 ### Dumping the data.
 
 Make sure that you have DumpQbx installed. See the Qserver instructions for details, but it involves the following steps:
-  - go to your local dotnetcore-minimal\QboxNext.DumpQbx directory
+  - go to your ``local dotnetcore-minimal\QboxNext.DumpQbx`` directory
   - compile the code for linux with the following command: ``dotnet publish -c Release -r linux-arm``
-  - copy the contents of dotnetcore-minimal\QboxNext.DumpQbx\bin\Release\netcoreapp2.1\linux-arm\publish to the /home/pi/DumpQbx directory on the Pi.
+  - copy the contents of ``dotnetcore-minimal\QboxNext.DumpQbx\bin\Release\netcoreapp2.1\linux-arm\publish`` to the ``/home/pi/DumpQbx`` directory on the Pi.
   
 Go to your data directory (you will have a different serialnumber): 
   ``cd /var/qboxnextdata/<Qbox_15-49-002-081/``
@@ -123,9 +123,13 @@ Test the script by executing and check if the txt files are created.
    
 ### Install qbox_plot
 It is advisable to use virtualenv to create a clean python environment that does not mix with the existing environment.
+ 
  ``sudo pip install virtualenv``
+ 
  ``virtualenv env``
+ 
  ``source env/bin/activate``
+ 
  ``pip install http://uilennest.net/repository/qbox_plot-1.0.0.tar.gz --upgrade``
 
 Test if the qbox_plot installation has worked by typing: ``qbox_plot --version``. 
@@ -133,8 +137,10 @@ Test if the qbox_plot installation has worked by typing: ``qbox_plot --version``
 --- qbx_plot.py - version 1.0.0 - 16 jan 2019 ---
 Copyright (C) 2019 - Nico Vermaas. This program comes with ABSOLUTELY NO WARRANTY;
 
-### The 'make_qbox_graphs.sh' script
+### Creating the graphs
 Create the following script in the data directory, it will execute the dump script and qbox_plot every 5 minutes to create 4 different presentations.
+
+> make_qbox_graphs.sh
 ```
 while [ 1 ]
 do
@@ -201,16 +207,8 @@ Create the following parameter files for the 4 different presentations:
 --y_axis_title=verbruik in Wh
 ```
 
-
-<p align="center">
-  <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/www_stroom_plot.jpg"/>
-</p>
-
-### Combinatie pagina
-Met de bovenstaande methode kunnen verschillende html pagina's worden gegenereerd, die alsvolgt kunnen worden samengevoegd in een overzichtspagine.
-Waarbij 'localhost' ook een IP adres of een web domein kan zijn.
-
-``qbox.html``
+Create the main html file that contains the presentation:
+> qbox.html
 
 ```
 <!DOCTYPE html>
@@ -251,6 +249,15 @@ Waarbij 'localhost' ook een IP adres of een web domein kan zijn.
 </body>
 </html>
 ```
+
+## automation
+Running the script ``make_qbox_graphs.sh`` should now produce all the graphs as webpages.
+To automate that process and keep it running in the background you should start that script with the following command.
+
+  ``nohub ./make_qbox_graphs.sh &``
+    
+## showing it on a webserver
+
 
 <p align="center">
   <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/qbox_gas_stroom.png"/>
