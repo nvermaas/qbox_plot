@@ -100,10 +100,10 @@ Make sure that you have DumpQbx installed. See the Qserver instructions for deta
   - copy the contents of dotnetcore-minimal\QboxNext.DumpQbx\bin\Release\netcoreapp2.1\linux-arm\publish to the /home/pi/DumpQbx directory on the Pi.
   
 Go to your data directory (you will have a different serialnumber): 
-  - ``cd /var/qboxnextdata/<Qbox_15-49-002-081/``
+  ``cd /var/qboxnextdata/<Qbox_15-49-002-081/``
  
-And make a symbolic link to the DumpQbx application
-  - ``ln -s /home/pi/DumpQbx/QboxNext.DumpQbx dumpqbx``
+And make a symbolic link to the DumpQbx application:
+  ``ln -s /home/pi/DumpQbx/QboxNext.DumpQbx dumpqbx``
   
 Create the 'dump_all.sh' script that will execute the conversion. It should have the following contents (but with your own serialnumber)
 ```  
@@ -123,61 +123,84 @@ Test the script by executing and check if the txt files are created.
    
 ### Install qbox_plot
 It is advisable to use virtualenv to create a clean python environment that does not mix with the existing environment.
-> sudo pip install virtualenv
-> virtualenv env
-> source env/bin/activate
-> pip install http://uilennest.net/repository/qbox_plot-1.0.0.tar.gz --upgrade
+ ``sudo pip install virtualenv``
+ ``virtualenv env``
+ ``source env/bin/activate``
+ ``pip install http://uilennest.net/repository/qbox_plot-1.0.0.tar.gz --upgrade``
 
-### De scripts
+Test if the qbox_plot installation has worked by typing: ``qbox_plot --version``. 
 
-'dump_stroom.sh' is een shell script dat de DumpQbx applicatie start voor elk 'kanaal' zodat de txt bestanden worden gegenereerd.
-Dit script kan met de hand worden uitgevoerd, maar ook automatisch door 'qbox_plot' met het commando dat met de '--remote_pre_command' wordt meegegeven. (zie de parameter file)
+--- qbx_plot.py - version 1.0.0 - 16 jan 2019 ---
+Copyright (C) 2019 - Nico Vermaas. This program comes with ABSOLUTELY NO WARRANTY;
 
-``dump_stroom.sh``:
+### The 'make_qbox_graphs.sh' script
+Create the following script in the data directory, it will execute the dump script and qbox_plot every 5 minutes to create 4 different presentations.
 ```
-cd /var/qboxnextdata/Qbox_15-49-002-081 
-./dumpqbx --qbx=/var/qboxnextdata/Qbox_15-49-002-081/15-49-002-081_00000181.qbx --values > 181.txt
-./dumpqbx --qbx=/var/qboxnextdata/Qbox_15-49-002-081/15-49-002-081_00000182.qbx --values > 182.txt
-./dumpqbx --qbx=/var/qboxnextdata/Qbox_15-49-002-081/15-49-002-081_00000281.qbx --values > 281.txt
-./dumpqbx --qbx=/var/qboxnextdata/Qbox_15-49-002-081/15-49-002-081_00000282.qbx --values > 282.txt
+while [ 1 ]
+do
+  ./dump_all.sh	
+  qbox_plot --parfile stroom_per_hour_today.par
+  qbox_plot --parfile gas_per_hour_today.par
+  qbox_plot --parfile stroom_this_month.par
+  qbox_plot --parfile gas_this_month.par
+  echo sleep for 5 minutes
+  sleep 300
+done
 ```
 
-``stroom.par`` (parameter file)
+Make the script executable:
+  ''chmod +x make_qbox_graphs.sh''
+  
+# The presentation files
+Create the following parameter files for the 4 different presentations:
+  First create the output directory: ``cd html``
+
+  Create the following files:
+  
+>  gas_per_hour_today.par
+```  
+--filename=2421.txt
+--output_html=html/gas.html
+--title=Gas per uur - Vandaag
+--mode=today
+--interval=hour
+--y_axis_title=verbruik in m3
 ```
---filename=181.txt
+  
+> gas_this_month.par
+```
+--filename=2421.txt
+--output_html=html/gas_month.html
+--title=Gas per dag - Deze Maand
+--mode=this_month
+--interval=day
+--y_axis_title=verbruik in m3
+```
+
+> stroom_per_hour_today.par
+```
 --consumption_files=181.txt,182.txt
 --redelivery_files=281.txt,282.txt
---remote_host=pi@192.168.?.?
---remote_dir=/var/qboxnextdata/Qbox_15-49-002-081
---remote_pre_command=/var/qboxnextdata/Qbox_15-49-002-081/dump_stroom.sh
---local_dir=data
---legends=verbruik,teruglevering,netto
 --mode=today
---output_html=/www/stroom.html
+--legends=verbruik,teruglevering,netto
+--output_html=html/stroom.html
 --title=Stroom per uur - Vandaag
 --interval=hour
 --y_axis_title=verbruik in Wh
 ```
 
-``reload_qbx.sh``:
-
-Dit script start de `qbox_plot' applicatie elke 600 seconden (10 minuten). 
-Dit voorbeeld laat zien dat er meerdere presentaties tegelijk kunnen worden gemaakt.
-
+> stroom_this_month.par
 ```
-source ./env/bin/activate
-while [ 1 ]
-do
-  qbox_plot --parfile stroom.par
-  qbox_plot --parfile gas.par
-  
-  echo sleep for 10 minutes
-  sleep 600
-done
+--consumption_files=181.txt,182.txt
+--redelivery_files=281.txt,282.txt
+--mode=this_month
+--legends=verbruik,teruglevering,netto
+--output_html=html/stroom_month.html
+--title=Stroom per dag - Deze Maand
+--interval=day
+--y_axis_title=verbruik in Wh
 ```
 
-De '--output_html=www/stroom.html' zorgt ervoor dat de html pagina op een plek terecht komt die door een webserver kan worden getoond.
-Het resultaat is deze web pagina die om de 10 minuten kan worden ververst. (de pagina ververst niet automatisch, maar met F5 wordt hij opnieuw geladen met nieuwe gegevens)
 
 <p align="center">
   <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/www_stroom_plot.jpg"/>
