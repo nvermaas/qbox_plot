@@ -106,6 +106,8 @@ And make a symbolic link to the DumpQbx application:
   ``ln -s /home/pi/DumpQbx/QboxNext.DumpQbx dumpqbx``
   
 Create the 'dump_all.sh' script that will execute the conversion. It should have the following contents (but with your own serialnumber)
+
+> dump_all.sh
 ```  
   cd /var/qboxnextdata/Qbox_15-49-002-081
   ./dumpqbx --qbx=/var/qboxnextdata/Qbox_15-49-002-081/15-49-002-081_00000181.qbx --values > 181.txt
@@ -132,7 +134,7 @@ It is advisable to use virtualenv to create a clean python environment that does
  
  ``pip install http://uilennest.net/repository/qbox_plot-1.0.0.tar.gz --upgrade``
 
-Test if the qbox_plot installation has worked by typing: ``qbox_plot --version``. 
+Test if the qbox_plot installation has worked by typing: ``qbox_plot --version``. You should see output like this:
 
 --- qbx_plot.py - version 1.0.0 - 16 jan 2019 ---
 Copyright (C) 2019 - Nico Vermaas. This program comes with ABSOLUTELY NO WARRANTY;
@@ -155,11 +157,13 @@ done
 ```
 
 Make the script executable:
-  ''chmod +x make_qbox_graphs.sh''
+  ``chmod +x make_qbox_graphs.sh``
   
 # The presentation files
 Create the following parameter files for the 4 different presentations:
-  First create the output directory: ``cd html``
+  First create the output directory: 
+  
+  ``cd html``
 
   Create the following files:
   
@@ -250,14 +254,21 @@ Create the main html file that contains the presentation:
 </html>
 ```
 
+Your data directory should now look like this (the number of txt and qbx files may differ)
+<p align="center">
+  <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/pi_qbox_dir.png.png"/>
+</p>
+
+
 ## automation
 Running the script ``make_qbox_graphs.sh`` should now produce all the graphs as webpages.
 To automate that process and keep it running in the background you should start that script with the following command.
 
-  ``nohub ./make_qbox_graphs.sh &``
+  ``nohup ./make_qbox_graphs.sh &``
+    
     
 ## showing it on a webserver
-
+(under construction)
 
 <p align="center">
   <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/qbox_gas_stroom.png"/>
