@@ -28,6 +28,7 @@ import requests
 
 import argparse
 import plotly.graph_objs as go
+#import numpy as np
 
 TIME_FORMAT = "%Y-%m-%d %H:%M"
 
@@ -322,6 +323,19 @@ def format_data_from_qbackend(args, starttime, my_data, dataset='gas'):
 
     generation_total  = my_data.get('data')[4].get('total')
     generation_data = my_data.get('data')[4].get('data')
+
+#    np_consumption = np.array(consumption_data)
+#    np_generation = np.array(generation_data)
+#    np_net_high = np.array(net_high_data)
+#    np_net_low = np.array(net_low_data)
+
+#    np_netto = np_net_high + np_net_low
+#    np_generation = (np_consumption - np_netto)
+#    np_generation = np_generation * -1
+#    np_consumption = np_consumption - np_generation
+
+#    consumption_data = np_consumption.tolist()
+#    generation_data = np_generation.tolist()
 
     # interate through the data to find the usage per timestamp
 

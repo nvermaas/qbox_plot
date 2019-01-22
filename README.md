@@ -80,29 +80,53 @@ parameter file: `2018_dec_stroom_per_dag.par`
   <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/stroom_plot.png"/>
 </p>
 
-## Geavanceerd gebruik.
-Het is mogelijk om qbox_plot zijn data files van een andere computer te laten lezen, 
-bij voorkeur van de Raspberry Pi waar ze gecreeerd worden. 
-En het is mogelijk om zowel voor als na de dataverwerking een extern commando uit te voeren, 
-bijvoorbeeld een scp commando om die data files te kopieren.
+## Using qbox_as 'Live Energy Monitor' 
 
-Dit maakt het mogelijk om 'qbox_plot' op een webserver te draaien, 
-waarbij hij eerst de QboxNext software de Raspberry Pi opdracht geeft om de data te exporteren naar de gewenste txt bestanden 
-alvorens ze te downloaden en te visualiseren. Dit gaat het er wel van uit dat de Qserver en DumpQbx applicaties al zijn geinstalleerd op de Raspberry Pi.
+qbox_plot can be used as a frontend monitor by letting it generate the html pages of the
+current gas and electricity usage on a directory that can be served by a webserver.
 
-### SSH keys
-Om een 'scp' commando uit te voeren moet de webserver met ssh kunnen inloggen op de PI. Het handigste is om dat via 'key forwarding' te doen.
-Dat kan met de volgende twee commando's (waarbij het IP adres de locatie van je Raspberry Pi in je eigen netwerk is):
-```
- > Op de webserver    : ssh-keygen -t rsa
- > op de Raspberry Pi : ssh-copy-id pi@192.168.?.?
- ```
- 
-Voor meer informatie over key forwarding: https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2 
- 
+This tutorial assumes that the Qserver and DumpQbx applicaties are already installed and working on the Raspberry Pi.
+We are working towards the following situation:
+
 <p align="center">
-  <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/qbox_plot_as_frontend.jpg"/>
+  <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/qbox_plot_as_frontend_basic.jpg"/>
 </p>
+
+### Dumping the data.
+
+Make sure that you have DumpQbx installed. See the Qserver instructions for details, but it involves the following steps:
+  - go to your local dotnetcore-minimal\QboxNext.DumpQbx directory
+  - compile the code for linux with the following command: ``dotnet publish -c Release -r linux-arm``
+  - copy the contents of dotnetcore-minimal\QboxNext.DumpQbx\bin\Release\netcoreapp2.1\linux-arm\publish to the /home/pi/DumpQbx directory on the Pi.
+  
+Go to your data directory (you will have a different serialnumber): 
+  - ``cd /var/qboxnextdata/<Qbox_15-49-002-081/``
+ 
+And make a symbolic link to the DumpQbx application
+  - ``ln -s /home/pi/DumpQbx/QboxNext.DumpQbx dumpqbx``
+  
+Create the 'dump_all.sh' script that will execute the conversion. It should have the following contents (but with your own serialnumber)
+```  
+  cd /var/qboxnextdata/Qbox_15-49-002-081
+  ./dumpqbx --qbx=/var/qboxnextdata/Qbox_15-49-002-081/15-49-002-081_00000181.qbx --values > 181.txt
+  ./dumpqbx --qbx=/var/qboxnextdata/Qbox_15-49-002-081/15-49-002-081_00000182.qbx --values > 182.txt
+  ./dumpqbx --qbx=/var/qboxnextdata/Qbox_15-49-002-081/15-49-002-081_00000281.qbx --values > 281.txt
+  ./dumpqbx --qbx=/var/qboxnextdata/Qbox_15-49-002-081/15-49-002-081_00000282.qbx --values > 282.txt
+  ./dumpqbx --qbx=/var/qboxnextdata/Qbox_15-49-002-081/15-49-002-081_00002421.qbx --values > 2421.txt
+```
+   
+Make it executable:
+   ``chmod +x dump_all.sh``
+  
+Test the script by executing and check if the txt files are created.
+   ``./dump_all.sh``
+   
+### Install qbox_plot
+It is advisable to use virtualenv to create a clean python environment that does not mix with the existing environment.
+> sudo pip install virtualenv
+> virtualenv env
+> source env/bin/activate
+> pip install http://uilennest.net/repository/qbox_plot-1.0.0.tar.gz --upgrade
 
 ### De scripts
 
