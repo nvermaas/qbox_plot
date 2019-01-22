@@ -296,7 +296,7 @@ create a symbolic link from the qbox html page to the /var/www/html directory.
   
 Now the following URL to the local Raspberry Pi on port 81 shows the energy data every 5 minutes automatically:
 
-  ``http://192.168.178.62:81/qbox.html``
+> http://192.168.178.62:81/qbox.html
   
 <p align="center">
   <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/qbox_gas_stroom.png"/>
