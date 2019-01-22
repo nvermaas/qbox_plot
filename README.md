@@ -256,7 +256,7 @@ Create the main html file that contains the presentation:
 
 Your data directory should now look like this (the number of txt and qbx files may differ)
 <p align="center">
-  <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/pi_qbox_dir.png.png"/>
+  <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/pi_qbox_dir.png"/>
 </p>
 
 
