@@ -268,8 +268,36 @@ To automate that process and keep it running in the background you should start 
     
     
 ## showing it on a webserver
-(under construction)
+Since port 80 is already reserved for the Qserver, we need to define a new port of this website. Like 81.
 
+Change that (as root) in the nginx configuration file:
+  ''pico /etc/nginx/sites-enabled/default''
+
+Add the following server section:
+```
+server {
+        listen 81;
+        listen [::]:81;
+
+        server_name example.com;
+
+        root /var/www/html;
+        index index.html;
+}
+```
+
+Restart nginx:
+  ``service nginx restart``
+
+create a symbolic link from the qbox html page to the /var/www/html directory.
+  
+  ``cd /var/www/html``
+  ``ln -s /var/qboxnextdata/Qbox_15-49-002-081/html/qbox.html qbox.html``
+  
+Now the following URL to the local Raspberry Pi on port 81 shows the energy data every 5 minutes automatically:
+
+  ``http://192.168.178.62:81/qbox.html``
+  
 <p align="center">
   <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/qbox_gas_stroom.png"/>
 </p>
