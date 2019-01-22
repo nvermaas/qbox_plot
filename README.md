@@ -265,8 +265,10 @@ To automate that process and keep it running in the background you should start 
 
 ## Changelist
 ### versie 1.1.0 (19 jan 2019)
+``pip install http://uilennest.net/repository/qbox_plot-1.1.0.tar.gz --upgrade``
   * Link met qservice backend kan nu gemaakt worden door de '--qbackend' parameter te zetten. 
     Hiervoor moet ook de '--qbox_sn' parameter worden gezet (type 'qbox_plot -h' voor meer details)
   * '-- presentation' parameter om te kiezen tussen 'single' en 'electricity' plot
   
 ### versie 1.0.0 (16 jan 2019)
+``pip install http://uilennest.net/repository/qbox_plot-1.0.0.tar.gz --upgrade``
