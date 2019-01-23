@@ -80,7 +80,7 @@ parameter file: `2018_dec_stroom_per_dag.par`
   <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/stroom_plot.png"/>
 </p>
 
-## Using qbox_as 'Live Energy Monitor' 
+## Using qbox_plot as 'Live Energy Monitor' 
 
 qbox_plot can be used as a frontend monitor by letting it generate the html pages of the
 current gas and electricity usage on a directory that can be served by a webserver.
