@@ -144,6 +144,8 @@ Create the following script in the data directory, it will execute the dump scri
 
 > make_qbox_graphs.sh
 ```
+#!/bin/bash
+source env/bin/activate
 while [ 1 ]
 do
   ./dump_all.sh	
