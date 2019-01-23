@@ -14,5 +14,7 @@ setup(name='qbox_plot',
                   'qbox_plot=qbox_plot.qbox_plot:main',
             ],
       },
-      scripts=['scripts/qbx_dump_and_copy.sh']
+      scripts=['scripts/dump_all.sh',
+               'scripts/copy_qbox_graphs.sh',
+               'scripts/make_qbox_graphs.sh']
       )

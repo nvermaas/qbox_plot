@@ -292,6 +292,7 @@ Restart nginx:
 create a symbolic link from the qbox html page to the /var/www/html directory.
   
   ``cd /var/www/html``
+
   ``ln -s /var/qboxnextdata/Qbox_15-49-002-081/html/qbox.html qbox.html``
   
 Now the following URL to the local Raspberry Pi on port 81 shows the energy data every 5 minutes automatically:
