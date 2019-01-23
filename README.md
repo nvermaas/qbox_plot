@@ -227,25 +227,25 @@ Create the main html file that contains the presentation:
 <tr>
     <td>
     <div>
-        <iframe src="http://localhost/qbox/gas.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" width="700" height="400"></iframe>
+        <iframe src="http://localhost/gas.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" width="700" height="400"></iframe>
     </div>
     </td>
     <td>
     <div>
-        <iframe src="http://localhost/qbox/stroom.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" width="700" height="400"></iframe>
+        <iframe src="http://localhost/stroom.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" width="700" height="400"></iframe>
     </div>
     </td>
 </tr>
 <tr>
     <td>
     <div>
-        <iframe src="http://localhost/qbox/gas_month.html" name="Gas deze maand" allowTransparency="true" scrolling="no" frameborder="0" width="700" height="400"></iframe>
+        <iframe src="http://localhost/gas_month.html" name="Gas deze maand" allowTransparency="true" scrolling="no" frameborder="0" width="700" height="400"></iframe>
     </div>
     </td>
     <td>
 
     <div>
-        <iframe src="http://localhost/qbox/stroom_month.html" name="Stroom deze maand" allowTransparency="true" scrolling="no" frameborder="0" width="700" height="400"></iframe>
+        <iframe src="http://localhost/stroom_month.html" name="Stroom deze maand" allowTransparency="true" scrolling="no" frameborder="0" width="700" height="400"></iframe>
     </div>
     </td>
 </tr>
@@ -294,6 +294,14 @@ create a symbolic link from the qbox html page to the /var/www/html directory.
   ``cd /var/www/html``
 
   ``ln -s /var/qboxnextdata/Qbox_15-49-002-081/html/qbox.html qbox.html``
+  
+  ``ln -s /var/qboxnextdata/Qbox_15-49-002-081/html/stroom.html stroom.html``
+  
+  ``ln -s /var/qboxnextdata/Qbox_15-49-002-081/html/gas.html gas.html``
+  
+  ``ln -s /var/qboxnextdata/Qbox_15-49-002-081/html/stroom_month.html stroom_month.html``
+  
+  ``ln -s /var/qboxnextdata/Qbox_15-49-002-081/html/gas_month.html gas_month.html``
   
 Now the following URL to the local Raspberry Pi on port 81 shows the energy data every 5 minutes automatically:
 
