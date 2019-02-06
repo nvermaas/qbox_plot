@@ -286,6 +286,8 @@ Now the following URL to the local Raspberry Pi on port 81 shows the energy data
     Die zijn een stuk sneller en de DumpQbx applicatie is niet meer nodig. 
     Vervang in de parameter files simpelweg de extentie .txt door .qbx.
     (de txt bestanden kunnen ook nog steeds gebruikt worden).
+  * Er wordt nu ook een 'qbox_read' programma mee geinstalleerd dat gebruikt kan worden voor queries op de binaire qbx bestanden.
+    type 'qbox_read -h' voor meer informatie.   
   
 ### versie 1.1.0 (19 jan 2019)
 ``pip install http://uilennest.net/repository/qbox_plot-1.1.0.tar.gz --upgrade``
