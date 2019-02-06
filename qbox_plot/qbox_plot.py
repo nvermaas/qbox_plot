@@ -28,6 +28,7 @@ import requests
 
 import argparse
 import plotly.graph_objs as go
+import qbox_read
 #import numpy as np
 
 
@@ -406,6 +407,47 @@ def get_data_from_qbackend(args, starttime, endtime):
     return data
 
 
+def parse_qbx_file(filename, starttime,endtime):
+    """
+    read the qbx binary datafile
+    :param filename:
+    :param starttime:
+    :param endtime:
+    :return:
+    """
+    print("parse_qbx_file: "+filename)
+    print("timerange   : "+str(starttime)+" - "+str(endtime))
+    # initialisation
+    x = []
+    y = []
+
+    rec_size = 26
+
+    with open(filename, "rb") as binary_file:
+        # position the file pointer at the starttime location
+        bof_timestamp = qbox_read.get_starttime(binary_file)
+
+        # posiition the pointer relative from the bof_timestamp at the starttime
+        pointer = qbox_read.get_pointer(binary_file, bof_timestamp, starttime)
+
+        timestamp = starttime
+
+        # loop through the binary file until the endtime is reached
+        try:
+            while (timestamp <= endtime):
+                value = qbox_read.get_record(binary_file, pointer)
+
+                x.append(timestamp)
+                y.append(value)
+                # print(str(timestamp)+' - '+str(value))
+
+                timestamp = timestamp + datetime.timedelta(minutes=1)
+                pointer = pointer + rec_size
+        except:
+            pass
+
+    return x,y
+
 def parse_txt_file(filename, starttime, endtime):
     """
     read the qbox datafile
@@ -464,8 +506,12 @@ def do_single_plot_presentation(args, starttime, endtime):
         data = get_data_from_qbackend(args, starttime, endtime)
         x, y = format_data_from_qbackend(args, starttime, data, args.dataset)
     else:
-        # get the data from a text file. The textfile must be in the format that QboxNext.DumpQbx delivers it.
-        x, y = parse_txt_file(os.path.join(args.local_dir, args.filename), starttime, endtime)
+        # get the data from a txt or qbx file. The textfile must be in the format that QboxNext.DumpQbx delivers it.
+        if ('.txt' in args.filename):
+            x, y = parse_txt_file(os.path.join(args.local_dir, args.filename), starttime, endtime)
+
+        elif ('.qbx' in args.filename):
+            x, y = parse_qbx_file(os.path.join(args.local_dir, args.filename), starttime, endtime)
 
         # condense and stack the data based on the given interval (hour, day, week, month, year)
         x, y = condense(x, y, args.interval)
@@ -525,7 +571,12 @@ def do_electricity_presentation_text(args, starttime, endtime):
                 target = os.path.join(args.local_dir, filename)
                 scp_filename(args.remote_host, source, target)
 
-            x, y = parse_txt_file(os.path.join(args.local_dir, filename), starttime, endtime)
+            if ('.txt' in filename):
+                x, y = parse_txt_file(os.path.join(args.local_dir, filename), starttime, endtime)
+
+            elif ('.qbx' in filename):
+                x, y = parse_qbx_file(os.path.join(args.local_dir, filename), starttime, endtime)
+
             x, y = condense(x, y, args.interval)
 
             xx.append(x)
@@ -549,7 +600,12 @@ def do_electricity_presentation_text(args, starttime, endtime):
                 target = os.path.join(args.local_dir, filename)
                 scp_filename(args.remote_host, source, target)
 
-            x, y = parse_txt_file(os.path.join(args.local_dir, filename), starttime, endtime)
+            if ('.txt' in filename):
+                x, y = parse_txt_file(os.path.join(args.local_dir, filename), starttime, endtime)
+
+            elif ('.qbx' in filename):
+                x, y = parse_qbx_file(os.path.join(args.local_dir, filename), starttime, endtime)
+
             x, y = condense(x, y, args.interval)
 
             xx.append(x)
@@ -618,7 +674,7 @@ def main():
 
     parser.add_argument("--filename",
                         default=None,
-                        help="txt file to parse (when txt file parsing is used)")
+                        help="txt or qbx file to parse (when txt file parsing is used)")
     parser.add_argument("--dataset",
                         default=None,
                         help="dataset to parse (when qbackend is used). Possible options: gas, consumption, generation")
@@ -696,11 +752,11 @@ def main():
 
     # --------------------------------------------------------------------------------------------------------
     if (args.version):
-        print('--- qbx_plot.py - version 1.1.0 - 19 jan 2019 ---')
+        print('--- qbx_plot.py - version 1.2.0 - 6 feb 2019 ---')
         print('Copyright (C) 2019 - Nico Vermaas. This program comes with ABSOLUTELY NO WARRANTY;')
         return
 
-    print('--- qbx_plot.py - version 1.1.0 - 19 jan 2019 ---')
+    print('--- qbx_plot.py - version 1.2.0 - 6 feb 2019 ---')
     print('Copyright (C) 2019 - Nico Vermaas. This program comes with ABSOLUTELY NO WARRANTY;')
     if args.starttime != None:
         starttime = datetime.datetime.strptime(args.starttime, TIME_FORMAT)

@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='qbox_plot',
-      version='1.1.0',
+      version='1.2.0',
       description='Plotting QBoxNext text files.',
       url='',
       author='Nico Vermaas',
@@ -12,6 +12,7 @@ setup(name='qbox_plot',
       entry_points={
             'console_scripts': [
                   'qbox_plot=qbox_plot.qbox_plot:main',
+                  'qbox_read=qbox_plot.qbox_read:main',
             ],
       },
       scripts=['scripts/dump_all.sh',

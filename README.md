@@ -1,7 +1,7 @@
 # qbox_plot
 Dit is een Python programma dat QBox text bestanden in grafieken kan weergeven in een html pagina.
 
-De text bestanden kunnen worden gemaakt met het DumpQbx programma. Dat valt buiten de scope van qpbox_plot, zie daarvoor:
+De text bestanden kunnen worden gemaakt met het DumpQbx programma. Dat valt buiten de scope van qbox_plot, zie daarvoor:
 * https://bitbucket.org/qboxnext/dotnetcore-minimal/src/master/
 
 ## Vereisten
@@ -11,7 +11,7 @@ Als dat niet het geval is dan kun je hier wat instructies vinden:
 
 ## Installatie
 
-   ``pip install http://uilennest.net/repository/qbox_plot-1.0.0.tar.gz --upgrade``
+   ``pip install http://uilennest.net/repository/qbox_plot-1.2.0.tar.gz --upgrade``
 
 ## Gebruik
 Zorg dat de qbox text bestanden lokaal beschikbaar zijn. In de voorbeelden staan ze in een ``data`` directory.

@@ -127,7 +127,7 @@ def get_pointer(binary_file, starttime, timestamp):
     :param timestamp:
     :return:
     """
-    print('get_pointer(' + str(starttime) + ',' + str(timestamp))
+    # print('get_pointer(' + str(starttime) + ',' + str(timestamp))
 
     # Convert to Unix timestamp
     d1_ts = time.mktime(starttime.timetuple())
@@ -172,7 +172,7 @@ def do_show_timestamp(filename, timestamp):
     """
     print('do_show_timestamp(' + filename + ',' + str(timestamp))
     with open(filename, "rb") as binary_file:
-
+        # what is the timestamp at the starting position of the file pointer? (the beginning of the file)
         starttime = get_starttime(binary_file)
 
         # determine the file pointer based on the starttime and the required timestamp
@@ -191,7 +191,7 @@ def do_show_range(filename, t1,t2):
     :param t1,t2: timestamps
     :return:
     """
-    print('do_show_range(' + filename + ',' + str(t1)+ ',' + str(t2))
+    print('do_show_range(' + filename + ', ' + str(t1)+ ', ' + str(t2))
 
     with open(filename, "rb") as binary_file:
         starttime = get_starttime(binary_file)
@@ -229,22 +229,38 @@ def main():
     parser.add_argument("--endtime","-t2",
                         default=None,
                         help="endtime of a range")
+    parser.add_argument("--examples", "-e",
+                        default=False,
+                        help="Show some examples",
+                        action="store_true")
 
-    print('--- qbox_read.py - version 1.0.0 - 3 feb 2019 ---')
+    print('--- qbox_read.py - version 1.2.0 - 6 feb 2019 ---')
     print('Copyright (C) 2019 - Nico Vermaas. This program comes with ABSOLUTELY NO WARRANTY;')
 
     args = parser.parse_args()
+
+    if (args.examples):
+        print("Show the consumption value (meterstand) of a certain timestamp.")
+        print('> qbox_read -o show_timestamp -f 2421.qbx -t "2019-01-17 04:35"')
+        print()
+        print("Show the difference in consumption value in a certain timerange.")
+        print('> qbox_read -o show_range -f ..\\testdata\\15-49-002-081_00002421_Client0.qbx -t1 "2019-01-01 00:00" -t2 "2019-02-01 00:00"')
+        print()
+
     if (args.operation=='show_all'):
         readQBX(args.filename)
+        return
 
     if (args.operation=='show_timestamp'):
         timestamp = datetime.datetime.strptime(args.timestamp, DATETIME_FORMAT)
         do_show_timestamp(args.filename, timestamp)
+        return
 
     if (args.operation=='show_range'):
         t1 = datetime.datetime.strptime(args.starttime, DATETIME_FORMAT)
         t2 = datetime.datetime.strptime(args.endtime, DATETIME_FORMAT)
         do_show_range(args.filename, t1,t2)
+        return
 
 
 
