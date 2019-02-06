@@ -1,8 +1,5 @@
 # qbox_plot
-Dit is een Python programma dat QBox text bestanden in grafieken kan weergeven in een html pagina.
-
-De text bestanden kunnen worden gemaakt met het DumpQbx programma. Dat valt buiten de scope van qbox_plot, zie daarvoor:
-* https://bitbucket.org/qboxnext/dotnetcore-minimal/src/master/
+Dit is een Python programma dat qbx bestanden in grafieken kan weergeven in een html pagina.
 
 ## Vereisten
 Het programma draait zowel op windows als linux. Python en pip moeten wel zijn geinstalleerd. 
@@ -14,8 +11,8 @@ Als dat niet het geval is dan kun je hier wat instructies vinden:
    ``pip install http://uilennest.net/repository/qbox_plot-1.2.0.tar.gz --upgrade``
 
 ## Gebruik
-Zorg dat de qbox text bestanden lokaal beschikbaar zijn. In de voorbeelden staan ze in een ``data`` directory.
-Een enkele grafiek kan elk gewenst qbox text bestand laten zien als 'bar' diagram of 'scatter' (lijn) diagram.
+Zorg dat de qbx bestanden lokaal beschikbaar zijn. In de voorbeelden staan ze in een ``data`` directory.
+Een enkele grafiek kan elk gewenst qbx bestand laten zien als 'bar' diagram of 'scatter' (lijn) diagram.
 
 De gecombineerde grafiek gaat er vanuit dat er 2 ``consumption_files`` en 2 ``redelivery_files`` zijn, 
 dat zijn respectievelijk de hoog/laag verbruik en hoog/laag teruglevering bestanden die oorspronkelijk door 'qurrent' de kanalen 181, 182, 281, 282 werden genoemd.
@@ -31,19 +28,19 @@ Voor 'help' over welke parameters er beschikbaar zijn:
 
 ## Voorbeelden
 
-### Nachtverbruik (kanaal 181) op 11 jan 2019
-  `qbox_plot --filename data\181.txt --interval hour --starttime "2019-01-11 00:00" --endtime "2019-01-12 00:00" --output_html=stroom181.html --title "nachtstroom 12 jan 2019"`
+### Laagverbruik (kanaal 181) op 11 jan 2019
+  `qbox_plot --filename data\181.qbx --interval hour --starttime "2019-01-11 00:00" --endtime "2019-01-12 00:00" --output_html=stroom181.html --title "nachtstroom 12 jan 2019"`
 `
 
-### Dagverbruik (kanaal 182) op 11 jan 2019
-  `qbox_plot --filename data\182.txt --interval hour --starttime "2019-01-11 00:00" --endtime "2019-01-12 00:00" --output_html=stroom182.html --title "dagstroom 12 jan 2019"`
+### Hoogverbruik (kanaal 182) op 11 jan 2019
+  `qbox_plot --filename data\182.qbx --interval hour --starttime "2019-01-11 00:00" --endtime "2019-01-12 00:00" --output_html=stroom182.html --title "dagstroom 12 jan 2019"`
 
 
 ### Enkele staafdiagram (gasverbruik) 
 parameter file: `2018_gas_per_maand.par`
  
 ```
---filename=qbx2018_2421.txt
+--filename=2421.qbx
 --local_dir=data
 --output_html=qbx2018_gas.html
 --title=Gasverbruik 2018 per maand
@@ -63,8 +60,8 @@ parameter file: `2018_gas_per_maand.par`
 
 parameter file: `2018_dec_stroom_per_dag.par`
 ```
---consumption_files=qbx2018_181.txt,qbx2018_182.txt
---redelivery_files=qbx2018_182.txt,qbx2018_282.txt
+--consumption_files=181.qbx,281.qbx
+--redelivery_files=182.qbx,282.qbx
 --local_dir=data
 --output_html=qbx2018_stroom.html
 --title=Stroom December 2018 - per dag
@@ -92,36 +89,6 @@ We are working towards the following situation:
   <img src="https://github.com/nvermaas/qbox_plot/blob/master/images/qbox_plot_as_frontend_basic.jpg"/>
 </p>
 
-### Dumping the data.
-
-Make sure that you have DumpQbx installed. See the Qserver instructions for details, but it involves the following steps:
-  - go to your ``local dotnetcore-minimal\QboxNext.DumpQbx`` directory
-  - compile the code for linux with the following command: ``dotnet publish -c Release -r linux-arm``
-  - copy the contents of ``dotnetcore-minimal\QboxNext.DumpQbx\bin\Release\netcoreapp2.1\linux-arm\publish`` to the ``/home/pi/DumpQbx`` directory on the Pi.
-  
-Go to your data directory (you will have a different serialnumber): 
-  ``cd /var/qboxnextdata/<Qbox_15-49-002-081/``
- 
-And make a symbolic link to the DumpQbx application:
-  ``ln -s /home/pi/DumpQbx/QboxNext.DumpQbx dumpqbx``
-  
-Create the 'dump_all.sh' script that will execute the conversion. It should have the following contents (but with your own serialnumber)
-
-> dump_all.sh
-```  
-  cd /var/qboxnextdata/Qbox_15-49-002-081
-  ./dumpqbx --qbx=/var/qboxnextdata/Qbox_15-49-002-081/15-49-002-081_00000181.qbx --values > 181.txt
-  ./dumpqbx --qbx=/var/qboxnextdata/Qbox_15-49-002-081/15-49-002-081_00000182.qbx --values > 182.txt
-  ./dumpqbx --qbx=/var/qboxnextdata/Qbox_15-49-002-081/15-49-002-081_00000281.qbx --values > 281.txt
-  ./dumpqbx --qbx=/var/qboxnextdata/Qbox_15-49-002-081/15-49-002-081_00000282.qbx --values > 282.txt
-  ./dumpqbx --qbx=/var/qboxnextdata/Qbox_15-49-002-081/15-49-002-081_00002421.qbx --values > 2421.txt
-```
-   
-Make it executable:
-   ``chmod +x dump_all.sh``
-  
-Test the script by executing and check if the txt files are created.
-   ``./dump_all.sh``
    
 ### Install qbox_plot
 It is advisable to use virtualenv to create a clean python environment that does not mix with the existing environment.
@@ -171,7 +138,7 @@ Create the following parameter files for the 4 different presentations:
   
 >  gas_per_hour_today.par
 ```  
---filename=2421.txt
+--filename=2421.qbx
 --output_html=html/gas.html
 --title=Gas per uur - Vandaag
 --mode=today
@@ -181,7 +148,7 @@ Create the following parameter files for the 4 different presentations:
   
 > gas_this_month.par
 ```
---filename=2421.txt
+--filename=2421.qbx
 --output_html=html/gas_month.html
 --title=Gas per dag - Deze Maand
 --mode=this_month
@@ -191,8 +158,8 @@ Create the following parameter files for the 4 different presentations:
 
 > stroom_per_hour_today.par
 ```
---consumption_files=181.txt,182.txt
---redelivery_files=281.txt,282.txt
+--consumption_files=181.qbx,182.qbx
+--redelivery_files=281.qbx,282.qbx
 --mode=today
 --legends=verbruik,teruglevering,netto
 --output_html=html/stroom.html
@@ -203,8 +170,8 @@ Create the following parameter files for the 4 different presentations:
 
 > stroom_this_month.par
 ```
---consumption_files=181.txt,182.txt
---redelivery_files=281.txt,282.txt
+--consumption_files=181.qbx,182.qbx
+--redelivery_files=281.qbx,282.qbx
 --mode=this_month
 --legends=verbruik,teruglevering,netto
 --output_html=html/stroom_month.html
@@ -314,6 +281,12 @@ Now the following URL to the local Raspberry Pi on port 81 shows the energy data
 </p>
 
 ## Changelist
+### versie 1.2.0 (6 feb 2019)
+  * qbox_plot kan nu behalve txt bestanden ook qbx bestanden gebruiken. 
+    Die zijn een stuk sneller en de DumpQbx applicatie is niet meer nodig. 
+    Vervang in de parameter files simpelweg de extentie .txt door .qbx.
+    (de txt bestanden kunnen ook nog steeds gebruikt worden).
+  
 ### versie 1.1.0 (19 jan 2019)
 ``pip install http://uilennest.net/repository/qbox_plot-1.1.0.tar.gz --upgrade``
   * Link met qservice backend kan nu gemaakt worden door de '--qbackend' parameter te zetten. 
