@@ -140,7 +140,7 @@ def get_pointer(binary_file, starttime, timestamp):
     # each record in the QBX file is 26 bytes (8 + 8 + 8 + 2)
     rec_size = 26
 
-    pointer = (minutes * rec_size) + offset
+    pointer = int((minutes * rec_size) + offset)
     return pointer
 
 
